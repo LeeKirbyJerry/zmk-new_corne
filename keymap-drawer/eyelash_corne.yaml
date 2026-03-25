@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - $$mdi:volume-off$$
   - '&msc MOVE_Y(-20)'
   - N
   - M
@@ -84,7 +84,7 @@ layers:
   - G
   - V
   - Q
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:pan-down$$
   - B
   - H
@@ -133,7 +133,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '-', s: _}
-  - $$mdi:volume-off$$
+  - BRIGHTNESS AUTO
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+*
   - {t: '-', s: _}
@@ -301,3 +301,5 @@ combos:
   k: $$mdi:apple-keyboard-control$$
 - p: [15, 16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [8, 23]
+  k: $$mdi:apple-keyboard-control$$
