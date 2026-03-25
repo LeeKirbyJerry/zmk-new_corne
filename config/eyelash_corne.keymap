@@ -80,14 +80,16 @@
         ToChinese: ToChinese {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_0)) &to 0>;
+            bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
+
             label = "TOCHINESE";
         };
 
         ToShrome: ToShrome {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_1)) &to 1>;
+            bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
+
             label = "TOSHROME";
         };
     };
