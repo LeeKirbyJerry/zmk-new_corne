@@ -1,20 +1,20 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
   - R
   - T
-  - $$mdi:arrow-up-bold$$
+  - '&mmv MOVE_Y(-100)'
   - Y
   - U
   - I
   - O
   - P
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
   - A
   - S
   - D
@@ -29,14 +29,14 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - Z
   - X
   - C
   - V
   - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
+  - MUTE
+  - '&mmv MOVE_Y(100)'
   - N
   - M
   - {t: ',', s: <}
@@ -45,65 +45,114 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - SYMBOL
+  - {t: '$$mdi:keyboard-space$$', h: Shortcuts}
+  - '&ToShrome'
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  Shrome:
+  - $$mdi:keyboard-esc$$
+  - W
+  - L
+  - Y
+  - M
+  - K
+  - '&mmv MOVE_Y(-100)'
+  - Z
+  - F
+  - O
+  - U
+  - J
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - C
+  - R
+  - S
+  - T
+  - D
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - P
+  - N
+  - A
+  - E
+  - I
+  - {t: ',', s: <}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - {t: '''', s: '"'}
+  - X
+  - G
+  - V
+  - Q
+  - MUTE
+  - '&mmv MOVE_Y(100)'
+  - B
+  - H
+  - {t: ., s: '>'}
+  - {t: '-', s: _}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - $$mdi:apple-keyboard-shift$$
+  - '&ToChinese'
+  - $$mdi:keyboard-space$$
+  - {t: Mouse, h: toggle}
+  NUMBER:
+  - {t: '`', s: '~'}
+  - Sft+!
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '0', s: )}
+  - Sft++
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '`', s: '~'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - Sft+{
+  - Sft+}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '6', s: ^}
+  - {t: '1', s: '!'}
+  - {t: '5', s: '%'}
+  - {t: '0', s: )}
+  - {t: '=', s: +}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - HOME
+  - Sft++
+  - Sft+(
+  - Sft+)
+  - 'Sft+:'
+  - {t: ;, s: ':'}
   - PG UP
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB EFF
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - {t: ., s: '>'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '-', s: _}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
-  - END
-  - PG DN
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  - Sft+*
+  - {t: '-', s: _}
+  - Sft+<
+  - Sft+>
+  - {t: /, s: '?'}
+  - U
+  - {t: '2', s: '@'}
+  - {t: '1', s: '!', type: held}
+  - {t: '9', s: (}
+  - {t: '2', s: '@'}
+  - {t: Sft+_, type: held alternate}
+  - {t: '0', s: )}
+  Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - '@'
-  - '#'
-  - $
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:mouse-left-click-outline$$
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
@@ -145,9 +194,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  - {t: '$$mdi:transfer$$', type: trans}
+  Shortcuts:
   - '&studio_unlock'
   - F1
   - F2
@@ -155,12 +204,12 @@ layers:
   - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
@@ -170,11 +219,11 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - PRINTSCREEN
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -190,12 +239,16 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
   - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [4, 17]
+  k: $$mdi:apple-keyboard-control$$
+- p: [15, 16, 17]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
