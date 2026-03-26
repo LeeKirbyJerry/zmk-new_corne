@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
-  - {t: '5', h: toggle}
+  - '&ToShrome'
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
@@ -417,41 +417,41 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [14, 2, 46, 47, 43, 24, 9]
   k: '&ToSteno'
-- p: [4, 15]
+- p: [15, 3]
   k: B
 - p: [17, 15]
   k: C
 - p: [17, 14]
   k: D
-- p: [5, 3]
+- p: [2, 4]
   k: F
 - p: [5, 2]
   k: G
 - p: [16, 17]
   k: H
-- p: [16, 2]
+- p: [16, 1]
   k: J
-- p: [5, 15]
+- p: [15, 4]
   k: K
-- p: [17, 4]
+- p: [17, 3]
   k: L
-- p: [17, 2]
+- p: [17, 1]
   k: M
 - p: [4, 3]
   k: P
 - p: [16, 14]
   k: Q
-- p: [17, 3]
+- p: [17, 2]
   k: U
-- p: [3, 15]
+- p: [15, 16]
   k: V
-- p: [5, 14]
+- p: [14, 4]
   k: W
-- p: [4, 14]
+- p: [14, 3]
   k: X
-- p: [5, 4]
+- p: [4, 3]
   k: Y
-- p: [4, 2]
+- p: [1, 3]
   k: Z
 - p: [15, 14]
   k: ':'
@@ -517,3 +517,9 @@ combos:
   k: {t: /, s: '?'}
 - p: [8, 24]
   k: {t: \, s: '|'}
+- p: [30, 31, 32]
+  k: {t: One-Handed, h: toggle}
+  l: [Shrome, QWERTY]
+- p: [37, 38, 39]
+  k: {t: One-Handed, h: toggle}
+  l: [Shrome, QWERTY]
