@@ -48,7 +48,7 @@ layers:
   - '&td0'
   - '&ToShrome'
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
   - $$mdi:keyboard-esc$$
   - W
@@ -94,10 +94,10 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
-  - $$mdi:apple-keyboard-shift$$
+  - '&td0'
   - '&ToChinese'
   - $$mdi:keyboard-space$$
-  - Nav
+  - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Symbols:
   - {t: '`', s: '~'}
   - Sft+!
@@ -129,7 +129,7 @@ layers:
   - PG UP
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: ., s: '>'}
-  - {t: '2', s: '@'}
+  - {t: '2', h: Sft+2, s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '-', s: _}
@@ -144,7 +144,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '1', s: '!', type: held}
   - {t: '9', s: (}
-  - {t: '2', s: '@'}
+  - $$mdi:apple-keyboard-shift$$
   - Sft+_
   - {t: '0', s: )}
   Nav:
@@ -230,7 +230,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - '&mkp MB5'
+  - '&td_bius'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
