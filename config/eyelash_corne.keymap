@@ -453,7 +453,7 @@
 &trans  &kp I   &kp E   &kp N   &kp T   &kp O                     &trans          &kp A         &kp R   &kp S   &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans        &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &lt 0 QWERTY  &trans  &trans
+                        &trans  &trans  &trans                                    &to 1   &trans  &trans
             >;
         };
 
