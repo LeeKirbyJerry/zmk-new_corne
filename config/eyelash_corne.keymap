@@ -27,7 +27,6 @@
     trigger-period-ms = <16>;
     delay-ms = <0>;                   // 0
 };
-
 &mt { flavor = "tap-preferred"; };
 
 &lt { flavor = "hold-preferred"; };
@@ -35,9 +34,6 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    chosen {
-        zmk,charmap = &charmap_us;
-    };
     behaviors {
         ak_c: ak_c {
             compatible = "zmk,behavior-adaptive-key";
