@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp C>;
-            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &sh_because;};
+            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&sh_because>;};
         };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -519,7 +519,7 @@
         sh_because: sh_because {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
+            bindings = <&macro_tap>, <&kp BSPC &kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
 
             label = "sh_because";
         };
@@ -670,7 +670,7 @@
 &kp ESC   &kp R    &kp O    &kp N      &kp I   &kp SQT                    &trans          &kp A  &kp I   &kp N      &kp O    &kp R   &kp ESC
 &kp BSPC  &kp S    &kp A    &kp T      &kp E   &kp D              &trans  &trans  &trans  &kp D  &kp E   &kp T      &kp A    &kp S   &kp BSPC
 &trans    &kp DOT  &kp DOT  &kp COMMA  &kp G   &kp B    &trans            &trans          &kp N  &kp G   &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
-                            &trans     &trans  &trans                                     &to 1  &trans  &trans
+                            &trans     &trans  &trans                                     &ExitSteno  &trans  &trans
             >;
         };
 
