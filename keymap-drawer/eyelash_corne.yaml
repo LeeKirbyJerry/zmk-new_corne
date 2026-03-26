@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
-  - {t: ONEHANDED, h: '5'}
+  - {t: '5', h: toggle}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
@@ -291,7 +291,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   One-Handed:
