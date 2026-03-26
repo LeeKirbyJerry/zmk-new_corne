@@ -175,7 +175,7 @@
 
         ToSteno {
             bindings = <&ToSteno>;
-            key-positions = <14 2 46 47 43 24 9>;
+            key-positions = <14 2 10 26>;
         };
 
         // One-handed layer combos - Left Hand (ohl_*)
