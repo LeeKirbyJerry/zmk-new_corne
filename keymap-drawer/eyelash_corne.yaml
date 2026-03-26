@@ -112,7 +112,7 @@ layers:
   - Sft+{
   - Sft+}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '6', h: Sft+6, s: ^}
   - {t: '1', h: Sft+1, s: '!'}
   - {t: '5', h: Sft+5, s: '%'}
@@ -132,20 +132,20 @@ layers:
   - {t: '2', h: Sft+2, s: '@'}
   - {t: '3', h: Sft+3, s: '#'}
   - {t: '4', h: Sft+4, s: $}
-  - {t: '-', s: _}
+  - {t: '-', s: QUOTE}
   - BRIGHTNESS AUTO
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+*
   - {t: '-', s: _}
   - Sft+<
   - Sft+>
-  - {t: /, s: '?'}
+  - {t: /, s: \}
   - U
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
-  - Sft+_
+  - {t: '''', s: _}
   - {t: '0', h: Sft+0, s: )}
   Nav:
   - $$mdi:progress-download$$
