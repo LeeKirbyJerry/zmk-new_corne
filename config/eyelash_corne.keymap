@@ -56,8 +56,6 @@
             bindings = <&mt ESC DEL>, <&kp DEL>;
         };
 
-
-
         as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
@@ -182,10 +180,10 @@
 
         // One-handed layer combos - Left Hand (ohl_*)
         // Key mappings: 1->5, 2->17, 3->4, 4->16, 5->3, 6->15, 7->2, 8->14
-        
+
         ohl_b: ohl_b {
             bindings = <&kp B>;
-            key-positions = <4 15>; // 4 15 -> b
+            key-positions = <15 3>; // 4 15 -> b
         };
 
         ohl_c: ohl_c {
@@ -200,7 +198,7 @@
 
         ohl_f: ohl_f {
             bindings = <&kp F>;
-            key-positions = <5 3>; // 5 3 -> f
+            key-positions = <2 4>; // 5 3 -> f
         };
 
         ohl_g: ohl_g {
@@ -215,22 +213,22 @@
 
         ohl_j: ohl_j {
             bindings = <&kp J>;
-            key-positions = <16 2>; // 16 2 -> j
+            key-positions = <16 1>; // 16 2 -> j
         };
 
         ohl_k: ohl_k {
             bindings = <&kp K>;
-            key-positions = <5 15>; // 5 15 -> k
+            key-positions = <15 4>; // 5 15 -> k
         };
 
         ohl_l: ohl_l {
             bindings = <&kp L>;
-            key-positions = <17 4>; // 17 4 -> l
+            key-positions = <17 3>; // 17 4 -> l
         };
 
         ohl_m: ohl_m {
             bindings = <&kp M>;
-            key-positions = <17 2>; // 17 2 -> m
+            key-positions = <17 1>; // 17 2 -> m
         };
 
         ohl_p: ohl_p {
@@ -245,32 +243,32 @@
 
         ohl_u: ohl_u {
             bindings = <&kp U>;
-            key-positions = <17 3>; // 17 3 -> u
+            key-positions = <17 2>; // 17 3 -> u
         };
 
         ohl_v: ohl_v {
             bindings = <&kp V>;
-            key-positions = <3 15>; // 3 15 -> v
+            key-positions = <15 16>; // 3 15 -> v
         };
 
         ohl_w: ohl_w {
             bindings = <&kp W>;
-            key-positions = <5 14>; // 5 14 -> w
+            key-positions = <14 4>; // 5 14 -> w
         };
 
         ohl_x: ohl_x {
             bindings = <&kp X>;
-            key-positions = <4 14>; // 4 14 -> x
+            key-positions = <14 3>; // 4 14 -> x
         };
 
         ohl_y: ohl_y {
             bindings = <&kp Y>;
-            key-positions = <5 4>; // 5 4 -> y
+            key-positions = <4 3>; // 5 4 -> y
         };
 
         ohl_z: ohl_z {
             bindings = <&kp Z>;
-            key-positions = <4 2>; // 4 2 -> z
+            key-positions = <1 3>; // 4 2 -> z
         };
 
         ohl_colon: ohl_colon {
@@ -310,7 +308,7 @@
 
         // One-handed layer combos - Right Hand (ohr_*)
         // Key mappings: 1->8, 2->23, 3->9, 4->24, 5->10, 6->25, 7->11, 8->26
-        
+
         ohr_b: ohr_b {
             bindings = <&kp B>;
             key-positions = <9 25>; // 9 25 -> b
@@ -435,6 +433,18 @@
             bindings = <&kp BSLH>;
             key-positions = <8 24>; // 8 24 -> backward slash
         };
+
+        LToOneHand {
+            bindings = <&to 6>;
+            key-positions = <30 31 32>;
+            layers = <1 0>;
+        };
+
+        RToOneHand {
+            bindings = <&to 6>;
+            key-positions = <37 38 39>;
+            layers = <1 0>;
+        };
     };
 
     macros {
@@ -493,10 +503,10 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp ESC            &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y            &kp U      &kp I      &kp O    &kp P     &kp DEL
-&kp BACKSPACE      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H            &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
-                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                        &to 5            &kp SPACE  &lt 3 TAB
+&kp ESC            &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
+&kp BACKSPACE      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
+                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
@@ -517,10 +527,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
 &kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
-                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
+                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -562,9 +572,9 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&trans  &kp I   &kp E   &kp N   &kp T   &kp O                     &trans          &kp A         &kp R   &kp S   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &kp I   &kp E   &kp N   &kp T   &kp O                     &trans          &kp A   &kp R   &kp S   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &to 1   &trans  &trans
             >;
         };
