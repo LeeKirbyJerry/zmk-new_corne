@@ -89,7 +89,7 @@ layers:
   - B
   - H
   - {t: ., s: '>'}
-  - {t: '-', s: ''''}
+  - {t: '-', s: DOUBLE QUOTE}
   - {t: /, s: \}
   - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
