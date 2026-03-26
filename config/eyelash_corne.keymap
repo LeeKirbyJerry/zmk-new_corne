@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp C>;
-            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &kp B &kp E &kp C &kp A &kp U &kp S &kp E>};
+            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC>};
         };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
