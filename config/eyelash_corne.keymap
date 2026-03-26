@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 400  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150   // 10
 
 #include <input/processors.dtsi>
@@ -121,61 +121,73 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         LCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <4 17>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         LEnter {
             bindings = <&kp ENTER>;
             key-positions = <15 16 17>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         RCtrl {
             bindings = <&kp RCTRL>;
             key-positions = <8 23>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         LShift {
             bindings = <&kp LSHIFT>;
             key-positions = <3 16>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         RShift {
             bindings = <&kp RSHIFT>;
             key-positions = <9 24>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         LAlt {
             bindings = <&kp LALT>;
             key-positions = <2 15>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         RAlt {
             bindings = <&kp RALT>;
             key-positions = <10 25>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         LGui {
             bindings = <&kp LGUI>;
             key-positions = <1 14>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         RGui {
             bindings = <&kp RGUI>;
             key-positions = <11 26>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <16 17 23 24>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         ToSteno {
             bindings = <&ToSteno>;
             key-positions = <14 2 10 26>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         // One-handed layer combos - Left Hand (ohl_*)
@@ -184,126 +196,151 @@
         ohl_b: ohl_b {
             bindings = <&kp B>;
             key-positions = <15 3>; // 4 15 -> b
+            layers = <6>;
         };
 
         ohl_c: ohl_c {
             bindings = <&kp C>;
             key-positions = <17 15>; // 17 15 -> c
+            layers = <6>;
         };
 
         ohl_d: ohl_d {
             bindings = <&kp D>;
             key-positions = <17 14>; // 17 14 -> d
+            layers = <6>;
         };
 
         ohl_f: ohl_f {
             bindings = <&kp F>;
             key-positions = <2 4>; // 5 3 -> f
+            layers = <6>;
         };
 
         ohl_g: ohl_g {
             bindings = <&kp G>;
             key-positions = <5 2>; // 5 2 -> g
+            layers = <6>;
         };
 
         ohl_h: ohl_h {
             bindings = <&kp H>;
             key-positions = <16 17>; // 16 15 -> h
+            layers = <6>;
         };
 
         ohl_j: ohl_j {
             bindings = <&kp J>;
             key-positions = <16 1>; // 16 2 -> j
+            layers = <6>;
         };
 
         ohl_k: ohl_k {
             bindings = <&kp K>;
             key-positions = <15 4>; // 5 15 -> k
+            layers = <6>;
         };
 
         ohl_l: ohl_l {
             bindings = <&kp L>;
             key-positions = <17 3>; // 17 4 -> l
+            layers = <6>;
         };
 
         ohl_m: ohl_m {
             bindings = <&kp M>;
             key-positions = <17 1>; // 17 2 -> m
+            layers = <6>;
         };
 
         ohl_p: ohl_p {
             bindings = <&kp P>;
             key-positions = <4 3>; // 4 3 -> p
+            layers = <6>;
         };
 
         ohl_q: ohl_q {
             bindings = <&kp Q>;
             key-positions = <16 14>; // 16 14 -> q
+            layers = <6>;
         };
 
         ohl_u: ohl_u {
             bindings = <&kp U>;
             key-positions = <17 2>; // 17 3 -> u
+            layers = <6>;
         };
 
         ohl_v: ohl_v {
             bindings = <&kp V>;
             key-positions = <15 16>; // 3 15 -> v
+            layers = <6>;
         };
 
         ohl_w: ohl_w {
             bindings = <&kp W>;
             key-positions = <14 4>; // 5 14 -> w
+            layers = <6>;
         };
 
         ohl_x: ohl_x {
             bindings = <&kp X>;
             key-positions = <14 3>; // 4 14 -> x
+            layers = <6>;
         };
 
         ohl_y: ohl_y {
             bindings = <&kp Y>;
             key-positions = <4 3>; // 5 4 -> y
+            layers = <6>;
         };
 
         ohl_z: ohl_z {
             bindings = <&kp Z>;
             key-positions = <1 3>; // 4 2 -> z
+            layers = <6>;
         };
 
         ohl_colon: ohl_colon {
             bindings = <&kp COLON>;
             key-positions = <15 14>; // 15 14 -> colon
+            layers = <6>;
         };
 
         ohl_semicolon: ohl_semicolon {
             bindings = <&kp SEMI>;
             key-positions = <3 2>; // 3 2 -> semicolon
+            layers = <6>;
         };
 
         ohl_question: ohl_question {
             bindings = <&kp QUESTION>;
             key-positions = <17 4 3>; // 17 4 3 -> question mark
+            layers = <6>;
         };
 
         ohl_exclamation: ohl_exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <5 16 15>; // 5 16 15 -> exclamation mark
+            layers = <6>;
         };
 
         ohl_hyphen: ohl_hyphen {
             bindings = <&kp MINUS>;
             key-positions = <5 4 3>; // 5 4 3 -> hyphen
+            layers = <6>;
         };
 
         ohl_slash: ohl_slash {
             bindings = <&kp FSLH>;
             key-positions = <16 3>; // 16 3 -> slash
+            layers = <6>;
         };
 
         ohl_backslash: ohl_backslash {
             bindings = <&kp BSLH>;
             key-positions = <5 16>; // 5 16 -> backward slash
+            layers = <6>;
         };
 
         // One-handed layer combos - Right Hand (ohr_*)
@@ -312,126 +349,151 @@
         ohr_b: ohr_b {
             bindings = <&kp B>;
             key-positions = <9 25>; // 9 25 -> b
+            layers = <6>;
         };
 
         ohr_c: ohr_c {
             bindings = <&kp C>;
             key-positions = <23 25>; // 23 25 -> c
+            layers = <6>;
         };
 
         ohr_d: ohr_d {
             bindings = <&kp D>;
             key-positions = <23 26>; // 23 26 -> d
+            layers = <6>;
         };
 
         ohr_f: ohr_f {
             bindings = <&kp F>;
             key-positions = <8 10>; // 8 10 -> f
+            layers = <6>;
         };
 
         ohr_g: ohr_g {
             bindings = <&kp G>;
             key-positions = <8 11>; // 8 11 -> g
+            layers = <6>;
         };
 
         ohr_h: ohr_h {
             bindings = <&kp H>;
             key-positions = <24 23>; // 24 25 -> h
+            layers = <6>;
         };
 
         ohr_j: ohr_j {
             bindings = <&kp J>;
             key-positions = <24 11>; // 24 11 -> j
+            layers = <6>;
         };
 
         ohr_k: ohr_k {
             bindings = <&kp K>;
             key-positions = <8 25>; // 8 25 -> k
+            layers = <6>;
         };
 
         ohr_l: ohr_l {
             bindings = <&kp L>;
             key-positions = <23 9>; // 23 9 -> l
+            layers = <6>;
         };
 
         ohr_m: ohr_m {
             bindings = <&kp M>;
             key-positions = <23 11>; // 23 11 -> m
+            layers = <6>;
         };
 
         ohr_p: ohr_p {
             bindings = <&kp P>;
             key-positions = <9 10>; // 9 10 -> p
+            layers = <6>;
         };
 
         ohr_q: ohr_q {
             bindings = <&kp Q>;
             key-positions = <24 26>; // 24 26 -> q
+            layers = <6>;
         };
 
         ohr_u: ohr_u {
             bindings = <&kp U>;
             key-positions = <23 10>; // 23 10 -> u
+            layers = <6>;
         };
 
         ohr_v: ohr_v {
             bindings = <&kp V>;
             key-positions = <10 25>; // 10 25 -> v
+            layers = <6>;
         };
 
         ohr_w: ohr_w {
             bindings = <&kp W>;
             key-positions = <8 26>; // 8 26 -> w
+            layers = <6>;
         };
 
         ohr_x: ohr_x {
             bindings = <&kp X>;
             key-positions = <9 26>; // 9 26 -> x
+            layers = <6>;
         };
 
         ohr_y: ohr_y {
             bindings = <&kp Y>;
             key-positions = <8 9>; // 8 9 -> y
+            layers = <6>;
         };
 
         ohr_z: ohr_z {
             bindings = <&kp Z>;
             key-positions = <9 11>; // 9 11 -> z
+            layers = <6>;
         };
 
         ohr_colon: ohr_colon {
             bindings = <&kp COLON>;
             key-positions = <25 26>; // 25 26 -> colon
+            layers = <6>;
         };
 
         ohr_semicolon: ohr_semicolon {
             bindings = <&kp SEMI>;
             key-positions = <10 11>; // 10 11 -> semicolon
+            layers = <6>;
         };
 
         ohr_question: ohr_question {
             bindings = <&kp QUESTION>;
             key-positions = <23 9 10>; // 23 9 10 -> question mark
+            layers = <6>;
         };
 
         ohr_exclamation: ohr_exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <8 24 25>; // 8 24 25 -> exclamation mark
+            layers = <6>;
         };
 
         ohr_hyphen: ohr_hyphen {
             bindings = <&kp MINUS>;
             key-positions = <8 9 10>; // 8 9 10 -> hyphen
+            layers = <6>;
         };
 
         ohr_slash: ohr_slash {
             bindings = <&kp FSLH>;
             key-positions = <24 10>; // 24 10 -> slash
+            layers = <6>;
         };
 
         ohr_backslash: ohr_backslash {
             bindings = <&kp BSLH>;
             key-positions = <8 24>; // 8 24 -> backward slash
+            layers = <6>;
         };
 
         LToOneHand {
