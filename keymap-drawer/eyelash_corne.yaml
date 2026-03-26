@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
   - '&ToShrome'
-  - {t: '$$mdi:keyboard-space$$', h: toggle}
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   Shrome:
   - $$mdi:keyboard-esc$$
