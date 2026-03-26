@@ -40,6 +40,12 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+        td_bius: td_bius {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mt LC(B) LC(I)>, <&mt LC(U) LC(S)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
