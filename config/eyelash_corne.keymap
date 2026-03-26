@@ -558,6 +558,7 @@
                 = <&macro_press &kp E &kp R &kp F &kp V &kp I &kp K &kp H>
                 , <&macro_wait_time 100>
                 , <&macro_release &kp E &kp R &kp F &kp V &kp I &kp K &kp H>
+                , <&macro_tap &to 7>
                 ;
             label = "TOSTENO";
         };
@@ -569,6 +570,8 @@
                 = <&macro_press &kp E &kp R &kp F &kp V &kp U &kp H>
                 , <&macro_wait_time 100>
                 , <&macro_release &kp E &kp R &kp F &kp V &kp U &kp H>
+                , <&macro_tap &to 7>
+
                 ;
             label = "EXITSTENO";
         };
