@@ -198,11 +198,11 @@ layers:
   - {type: held}
   Shortcuts:
   - '&studio_unlock'
-  - F1
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: 'Ctl+Sft+$$mdi:keyboard-tab$$'}
   - Ctl+W
   - F3
   - F4
-  - F5
+  - {t: Ctl+T, h: Sft+Ctl+T}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F1
   - F2
@@ -212,9 +212,9 @@ layers:
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
-  - Ctl+S
+  - {t: Ctl+S, h: Ctl+Sft+S}
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - Ctl+F
   - '&mkp MB4'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
