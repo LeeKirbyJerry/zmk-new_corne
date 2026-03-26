@@ -77,9 +77,9 @@ layers:
   - A
   - E
   - I
-  - {t: ',', s: <}
+  - {t: ',', s: '?'}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  - {t: '''', s: '"'}
+  - {t: '''', s: _}
   - X
   - G
   - V
@@ -89,8 +89,8 @@ layers:
   - B
   - H
   - {t: ., s: '>'}
-  - {t: '-', s: _}
-  - {t: /, s: '?'}
+  - {t: '-', s: QUOTE}
+  - {t: /, s: \}
   - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
