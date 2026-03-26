@@ -389,7 +389,7 @@ layers:
   - C
   - V
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ToShrome'
+  - '&ExitSteno'
   - N
   - M
 combos:
