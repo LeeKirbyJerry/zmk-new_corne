@@ -250,9 +250,9 @@
 
         Shrome {
             bindings = <
-&kp ESC       &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&kp BSPC      &kp C      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E       &kp I      &mm_comma
-&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp mm_dot    &mm_hyphen  &mm_slash  &as TAB
+&kp ESC       &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O       &kp U       &kp J      &kp SEMI
+&kp BSPC      &kp C      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A       &kp E       &kp I      &mm_comma
+&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp mm_dot  &mm_hyphen  &mm_slash  &as TAB
                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
@@ -263,10 +263,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &td_plus                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT      &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &td_minus  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS     &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
-                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &mm_quote     &as N0
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &td_plus                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &td_minus  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
+                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
