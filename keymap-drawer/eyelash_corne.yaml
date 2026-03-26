@@ -88,8 +88,8 @@ layers:
   - $$mdi:pan-down$$
   - B
   - H
-  - mm dot
-  - {t: '-', s: DOUBLE QUOTE}
+  - {t: ., s: '>'}
+  - {t: '-', s: '"'}
   - {t: /, s: \}
   - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
