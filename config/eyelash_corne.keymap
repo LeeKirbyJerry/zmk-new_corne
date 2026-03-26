@@ -20,6 +20,24 @@
     delay-ms = <0>;                   // 0
 };
 
+&msc_slow {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <1000>;
+    delay-ms = <0>;
+};
+
+&msc_medium {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <500>;
+    delay-ms = <0>;
+};
+
+&msc_fast {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <250>;
+    delay-ms = <0>;
+};
+
 &mmv {
     time-to-max-speed-ms = <250>;
     acceleration-exponent = <1>;
@@ -204,6 +222,21 @@
                 <&kp LSHFT>;
         };
 
+        multi_stage_scroll: multi_stage_scroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MULTI_STAGE_SCROLL";
+            bindings =
+                // Stage 1: Slow scroll (0-1 seconds)
+                <&msc_slow SCRL_UP>,
+                <&wait_ms 1000>,
+                // Stage 2: Medium scroll (1-2 seconds)
+                <&msc_medium SCRL_UP>,
+                <&wait_ms 1000>,
+                // Stage 3: Fast scroll (2+ seconds)
+                <&msc_fast SCRL_UP>;
+        };
+
         as: autoshift {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -275,7 +308,7 @@
         Nav {
             display-name = "Nav";
             bindings = <
-&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
+&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &multi_stage_scroll                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
 &trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
 &bt BT_CLR   &out OUT_USB  &out OUT_BLE    &bt BT_PRV      &bt BT_NXT       &mkp MB5        &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS            &kp LBRC        &kp RBRC             &kp PIPE   &kp TILDE
                                            &trans          &trans           &kp SPACE                                                                  &to 1      &trans              &trans
