@@ -56,19 +56,7 @@
             bindings = <&mt ESC DEL>, <&kp DEL>;
         };
 
-        mt_plus: mt_plus {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp ASTERISK>, <&kp PLUS>;
-        };
 
-        mt_minus: mt_minus {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp FSLH>, <&kp MINUS>;
-        };
 
         as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -192,136 +180,260 @@
             key-positions = <14 2 46 47 43 24 9>;
         };
 
-        // One-handed layer combos
-        // Individual keys: 1->i, 2->e, 3->n, 4->t, 5->o, 6->a, 7->r, 8->s
-        // Key positions: 1=Q, 2=W, 3=E, 4=R, 5=T, 6=Y, 7=U, 8=I
-        // Letter combinations
-
-        oh_b: oh_b {
+        // One-handed layer combos - Left Hand (ohl_*)
+        // Key mappings: 1->5, 2->17, 3->4, 4->16, 5->3, 6->15, 7->2, 8->14
+        
+        ohl_b: ohl_b {
             bindings = <&kp B>;
-            key-positions = <3 6>; // 3 6 -> b
+            key-positions = <4 15>; // 4 15 -> b
         };
 
-        oh_c: oh_c {
+        ohl_c: ohl_c {
             bindings = <&kp C>;
-            key-positions = <2 6>; // 2 6 -> c
+            key-positions = <17 15>; // 17 15 -> c
         };
 
-        oh_d: oh_d {
+        ohl_d: ohl_d {
             bindings = <&kp D>;
-            key-positions = <2 8>; // 2 8 -> d
+            key-positions = <17 14>; // 17 14 -> d
         };
 
-        oh_f: oh_f {
+        ohl_f: ohl_f {
             bindings = <&kp F>;
-            key-positions = <1 5>; // 1 5 -> f
+            key-positions = <5 3>; // 5 3 -> f
         };
 
-        oh_g: oh_g {
+        ohl_g: ohl_g {
             bindings = <&kp G>;
-            key-positions = <1 7>; // 1 7 -> g
+            key-positions = <5 2>; // 5 2 -> g
         };
 
-        oh_h: oh_h {
+        ohl_h: ohl_h {
             bindings = <&kp H>;
-            key-positions = <4 6>; // 4 6 -> h
+            key-positions = <16 15>; // 16 15 -> h
         };
 
-        oh_j: oh_j {
+        ohl_j: ohl_j {
             bindings = <&kp J>;
-            key-positions = <4 7>; // 4 7 -> j
+            key-positions = <16 2>; // 16 2 -> j
         };
 
-        oh_k: oh_k {
+        ohl_k: ohl_k {
             bindings = <&kp K>;
-            key-positions = <1 6>; // 1 6 -> k
+            key-positions = <5 15>; // 5 15 -> k
         };
 
-        oh_l: oh_l {
+        ohl_l: ohl_l {
             bindings = <&kp L>;
-            key-positions = <2 3>; // 2 3 -> l
+            key-positions = <17 4>; // 17 4 -> l
         };
 
-        oh_m: oh_m {
+        ohl_m: ohl_m {
             bindings = <&kp M>;
-            key-positions = <2 7>; // 2 7 -> m
+            key-positions = <17 2>; // 17 2 -> m
         };
 
-        oh_p: oh_p {
+        ohl_p: ohl_p {
             bindings = <&kp P>;
-            key-positions = <3 5>; // 3 5 -> p
+            key-positions = <4 3>; // 4 3 -> p
         };
 
-        oh_q: oh_q {
+        ohl_q: ohl_q {
             bindings = <&kp Q>;
-            key-positions = <4 8>; // 4 8 -> q
+            key-positions = <16 14>; // 16 14 -> q
         };
 
-        oh_u: oh_u {
+        ohl_u: ohl_u {
             bindings = <&kp U>;
-            key-positions = <2 5>; // 2 5 -> u
+            key-positions = <17 3>; // 17 3 -> u
         };
 
-        oh_v: oh_v {
+        ohl_v: ohl_v {
             bindings = <&kp V>;
-            key-positions = <5 6>; // 5 6 -> v (using different combo to avoid conflict with h)
+            key-positions = <3 15>; // 3 15 -> v
         };
 
-        oh_w: oh_w {
+        ohl_w: ohl_w {
             bindings = <&kp W>;
-            key-positions = <1 8>; // 1 8 -> w
+            key-positions = <5 14>; // 5 14 -> w
         };
 
-        oh_x: oh_x {
+        ohl_x: ohl_x {
             bindings = <&kp X>;
-            key-positions = <3 8>; // 3 8 -> x
+            key-positions = <4 14>; // 4 14 -> x
         };
 
-        oh_y: oh_y {
+        ohl_y: ohl_y {
             bindings = <&kp Y>;
-            key-positions = <1 3>; // 1 3 -> y
+            key-positions = <5 4>; // 5 4 -> y
         };
 
-        oh_z: oh_z {
+        ohl_z: ohl_z {
             bindings = <&kp Z>;
-            key-positions = <3 7>; // 3 7 -> z
+            key-positions = <4 2>; // 4 2 -> z
         };
 
-        // Symbol combinations
-
-        oh_colon: oh_colon {
+        ohl_colon: ohl_colon {
             bindings = <&kp COLON>;
-            key-positions = <6 8>; // 6 8 -> colon
+            key-positions = <15 14>; // 15 14 -> colon
         };
 
-        oh_semicolon: oh_semicolon {
+        ohl_semicolon: ohl_semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <5 7>; // 5 7 -> semicolon
+            key-positions = <3 2>; // 3 2 -> semicolon
         };
 
-        oh_question: oh_question {
+        ohl_question: ohl_question {
             bindings = <&kp QUESTION>;
-            key-positions = <2 3 5>; // 2 3 5 -> question mark
+            key-positions = <17 4 3>; // 17 4 3 -> question mark
         };
 
-        oh_exclamation: oh_exclamation {
+        ohl_exclamation: ohl_exclamation {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <1 4 6>; // 1 4 6 -> exclamation mark
+            key-positions = <5 16 15>; // 5 16 15 -> exclamation mark
         };
 
-        oh_hyphen: oh_hyphen {
+        ohl_hyphen: ohl_hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <1 3 5>; // 1 3 5 -> hyphen
+            key-positions = <5 4 3>; // 5 4 3 -> hyphen
         };
 
-        oh_slash: oh_slash {
+        ohl_slash: ohl_slash {
             bindings = <&kp FSLH>;
-            key-positions = <4 5>; // 4 5 -> slash
+            key-positions = <16 3>; // 16 3 -> slash
         };
 
-        oh_backslash: oh_backslash {
+        ohl_backslash: ohl_backslash {
             bindings = <&kp BSLH>;
-            key-positions = <1 4>; // 1 4 -> backward slash
+            key-positions = <5 16>; // 5 16 -> backward slash
+        };
+
+        // One-handed layer combos - Right Hand (ohr_*)
+        // Key mappings: 1->8, 2->23, 3->9, 4->24, 5->10, 6->25, 7->11, 8->26
+        
+        ohr_b: ohr_b {
+            bindings = <&kp B>;
+            key-positions = <9 25>; // 9 25 -> b
+        };
+
+        ohr_c: ohr_c {
+            bindings = <&kp C>;
+            key-positions = <23 25>; // 23 25 -> c
+        };
+
+        ohr_d: ohr_d {
+            bindings = <&kp D>;
+            key-positions = <23 26>; // 23 26 -> d
+        };
+
+        ohr_f: ohr_f {
+            bindings = <&kp F>;
+            key-positions = <8 10>; // 8 10 -> f
+        };
+
+        ohr_g: ohr_g {
+            bindings = <&kp G>;
+            key-positions = <8 11>; // 8 11 -> g
+        };
+
+        ohr_h: ohr_h {
+            bindings = <&kp H>;
+            key-positions = <24 25>; // 24 25 -> h
+        };
+
+        ohr_j: ohr_j {
+            bindings = <&kp J>;
+            key-positions = <24 11>; // 24 11 -> j
+        };
+
+        ohr_k: ohr_k {
+            bindings = <&kp K>;
+            key-positions = <8 25>; // 8 25 -> k
+        };
+
+        ohr_l: ohr_l {
+            bindings = <&kp L>;
+            key-positions = <23 9>; // 23 9 -> l
+        };
+
+        ohr_m: ohr_m {
+            bindings = <&kp M>;
+            key-positions = <23 11>; // 23 11 -> m
+        };
+
+        ohr_p: ohr_p {
+            bindings = <&kp P>;
+            key-positions = <9 10>; // 9 10 -> p
+        };
+
+        ohr_q: ohr_q {
+            bindings = <&kp Q>;
+            key-positions = <24 26>; // 24 26 -> q
+        };
+
+        ohr_u: ohr_u {
+            bindings = <&kp U>;
+            key-positions = <23 10>; // 23 10 -> u
+        };
+
+        ohr_v: ohr_v {
+            bindings = <&kp V>;
+            key-positions = <10 25>; // 10 25 -> v
+        };
+
+        ohr_w: ohr_w {
+            bindings = <&kp W>;
+            key-positions = <8 26>; // 8 26 -> w
+        };
+
+        ohr_x: ohr_x {
+            bindings = <&kp X>;
+            key-positions = <9 26>; // 9 26 -> x
+        };
+
+        ohr_y: ohr_y {
+            bindings = <&kp Y>;
+            key-positions = <8 9>; // 8 9 -> y
+        };
+
+        ohr_z: ohr_z {
+            bindings = <&kp Z>;
+            key-positions = <9 11>; // 9 11 -> z
+        };
+
+        ohr_colon: ohr_colon {
+            bindings = <&kp COLON>;
+            key-positions = <25 26>; // 25 26 -> colon
+        };
+
+        ohr_semicolon: ohr_semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <10 11>; // 10 11 -> semicolon
+        };
+
+        ohr_question: ohr_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <23 9 10>; // 23 9 10 -> question mark
+        };
+
+        ohr_exclamation: ohr_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <8 24 25>; // 8 24 25 -> exclamation mark
+        };
+
+        ohr_hyphen: ohr_hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9 10>; // 8 9 10 -> hyphen
+        };
+
+        ohr_slash: ohr_slash {
+            bindings = <&kp FSLH>;
+            key-positions = <24 10>; // 24 10 -> slash
+        };
+
+        ohr_backslash: ohr_backslash {
+            bindings = <&kp BSLH>;
+            key-positions = <8 24>; // 8 24 -> backward slash
         };
     };
 
@@ -405,9 +517,9 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt_plus                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt LSFT(N8) PLUS                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
 &mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt_minus  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
                                      &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
             >;
 
