@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
@@ -27,6 +26,7 @@
     trigger-period-ms = <16>;
     delay-ms = <0>;                   // 0
 };
+
 &mt { flavor = "tap-preferred"; };
 
 &lt { flavor = "hold-preferred"; };
@@ -39,8 +39,14 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp C>;
-            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&sh_because>;};
+
+            akt_qc {
+                trigger-keys = <Q>;
+                max-prior-idle-ms = <300>;
+                bindings = <&sh_because>;
+            };
         };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -519,10 +525,14 @@
         sh_because: sh_because {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp BSPC &kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
+            bindings =
+                <&macro_tap>,
+                <&kp BSPC &kp B &kp E &kp C &kp A &kp U &kp S &kp E>,
+                <&macro_press>;
 
             label = "sh_because";
         };
+
         shifted: macro_shifted_kp {
             #binding-cells = <1>;
             label = "MACRO_SHIFTED_KP";
@@ -604,6 +614,7 @@
 &kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
+
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
         };
 
@@ -667,9 +678,9 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&kp ESC   &kp R    &kp O    &kp N      &kp I   &kp SQT                    &trans          &kp A  &kp I   &kp N      &kp O    &kp R   &kp ESC
-&kp BSPC  &kp S    &kp A    &kp T      &kp E   &kp D              &trans  &trans  &trans  &kp D  &kp E   &kp T      &kp A    &kp S   &kp BSPC
-&trans    &kp DOT  &kp DOT  &kp COMMA  &kp G   &kp B    &trans            &trans          &kp N  &kp G   &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
+&kp ESC   &kp R    &kp O    &kp N      &kp I   &kp SQT                    &trans          &kp A       &kp I   &kp N      &kp O    &kp R   &kp ESC
+&kp BSPC  &kp S    &kp A    &kp T      &kp E   &kp D              &trans  &trans  &trans  &kp D       &kp E   &kp T      &kp A    &kp S   &kp BSPC
+&trans    &kp DOT  &kp DOT  &kp COMMA  &kp G   &kp B    &trans            &trans          &kp N       &kp G   &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
                             &trans     &trans  &trans                                     &ExitSteno  &trans  &trans
             >;
         };
@@ -677,10 +688,10 @@
         Steno {
             display-name = "Steno";
             bindings = <
-&kp ESC  &kp Q   &kp W   &kp E   &kp R   &kp T                     &trans          &kp Y      &kp U   &kp I   &kp O   &kp P     &kp LBKT
-&kp TAB  &kp A   &kp S   &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H      &kp J   &kp K   &kp L   &kp SEMI  &kp SQT
-&trans   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans     &trans  &trans  &trans  &trans    &trans
-                         &kp C   &kp V   &trans                                    &ToShrome  &kp N   &kp M
+&kp ESC  &kp Q   &kp W   &kp E   &kp R   &kp T                     &trans          &kp Y       &kp U   &kp I   &kp O   &kp P     &kp LBKT
+&kp TAB  &kp A   &kp S   &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H       &kp J   &kp K   &kp L   &kp SEMI  &kp SQT
+&trans   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans      &trans  &trans  &trans  &trans    &trans
+                         &kp C   &kp V   &trans                                    &ExitSteno  &kp N   &kp M
             >;
         };
     };
