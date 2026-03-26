@@ -26,6 +26,10 @@
     trigger-period-ms = <32>;
 };
 
+&mt {
+    flavor = "hold-preferred";
+};
+
 &soft_off { hold-time-ms = <2000>; };
 
 / {
