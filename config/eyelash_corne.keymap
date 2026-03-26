@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp C>;
-            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &kp B &kp E &kp C &kp A>;};
+            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &sh_because;};
         };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -516,6 +516,13 @@
     };
 
     macros {
+        sh_because: sh_because {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
+
+            label = "sh_because";
+        };
         shifted: macro_shifted_kp {
             #binding-cells = <1>;
             label = "MACRO_SHIFTED_KP";
