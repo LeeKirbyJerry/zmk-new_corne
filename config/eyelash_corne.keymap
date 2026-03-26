@@ -56,18 +56,18 @@
             bindings = <&mt ESC DEL>, <&kp DEL>;
         };
 
-        td_plus: td_plus {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
+        mt_plus: mt_plus {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&kp PLUS>, <&kp ASTERISK>;
+            bindings = <&kp ASTERISK>, <&kp PLUS>;
         };
 
-        td_minus: td_minus {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
+        mt_minus: mt_minus {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&kp MINUS>, <&kp FSLH>;
+            bindings = <&kp FSLH>, <&kp MINUS>;
         };
 
         as_ht: autoshift_hold_tap {
@@ -263,9 +263,9 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &td_plus                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt_plus                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
 &mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &td_minus  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt_minus  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
                                      &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
             >;
 
