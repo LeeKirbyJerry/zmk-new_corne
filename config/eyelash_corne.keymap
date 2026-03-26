@@ -570,7 +570,7 @@
                 , <&macro_wait_time 100>
                 , <&macro_release &kp E &kp R &kp F &kp V &kp U &kp H>
                 ;
-            label = "TOSTENO";
+            label = "EXITSTENO";
         };
     };
 
