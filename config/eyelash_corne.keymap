@@ -232,7 +232,7 @@
             bindings = <
 &kp ESC            &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
 &kp BACKSPACE      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
@@ -243,7 +243,7 @@
             bindings = <
 &kp ESC       &kp W    &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U      &kp J     &kp SEMI
 &kp BSPC      &kp C    &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E      &kp I     &kp COMMA
-&kp LC(BSPC)  &kp SQT  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp DOT    &kp MINUS  &kp FSLH  &kp TAB
+&kp LC(BSPC)  &kp SQT  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp DOT    &kp MINUS  &kp FSLH  &as TAB
                               &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
