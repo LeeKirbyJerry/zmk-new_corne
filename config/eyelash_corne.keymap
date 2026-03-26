@@ -1,6 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150   // 10
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -54,13 +53,27 @@
         tapping-term-ms = <200>;
         bindings = <&mt ESC DEL>, <&kp DEL>;
         };
-          as: auto_shift {
+
+        td_plus: td_plus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp PLUS>, <&kp ASTERISK>;
+        };
+
+        td_minus: td_minus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp FSLH>;
+        };
+          as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <135>;
-            quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&shifted>, <&kp>;
         };
 
         mm_comma: mod_morph_comma {
@@ -168,6 +181,32 @@
     };
 
     macros {
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press &kp LSHFT>,
+                <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp LSHFT>;
+        };
+
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1>,
+                <&macro_param_1to2>,
+                <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1>,
+                <&macro_param_1to2>,
+                <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
         ToChinese: ToChinese {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -215,10 +254,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE     &kp LS(EXCL)  AS(N7)  AS(N8)  AS(N9)  &kp LS(PLUS)                                           &mmv MOVE_UP                     &kp GRAVE       &kp LBKT       &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  AS(N6)  AS(N1)  AS(N5)  AS(N0)  &kp EQUAL                              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)  &kp DOT       AS(N2)  AS(N3)  AS(N4)  &mm_hyphen     &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS      &kp LS(LT)    &kp LS(GT)     &mm_slash      &kp U
-                                           &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp LEFT_SHIFT  &mm_quote  AS(N0)
+&kp GRAVE     &kp LS(EXCL)  &as N7  &as N8  &as N9  &td_plus                                           &mmv MOVE_UP                     &kp GRAVE       &kp LBKT       &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6  &as N1  &as N5  &as N0  &kp EQUAL                              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp LC(BSPC)  &kp DOT       &as N2  &as N3  &as N4  &td_minus     &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS      &kp LS(LT)    &kp LS(GT)     &mm_slash      &kp U
+                                           &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp LEFT_SHIFT  &mm_quote  &as N0
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
