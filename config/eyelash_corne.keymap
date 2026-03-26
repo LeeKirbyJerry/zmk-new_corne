@@ -28,10 +28,6 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-&mt {
-    flavor = "hold-preferred";
-};
-
 / {
     behaviors {
         td0: td0 {
@@ -182,10 +178,10 @@
         Shortcuts {
             display-name = "Shortcuts";
             bindings = <
-&studio_unlock  &kp F1     &kp LC(W)  &kp F3     &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F1  &kp F2        &kp F3         &kp F4         &kp F5          &kp F6
-&trans          &kp LC(A)  &kp LC(S)  &mkp MCLK  &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7  &kp F8        &kp F9         &kp F10        &kp F11         &kp F12
-&kp LC(LS(Z))   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &kp LEFT_GUI  &kp LG(SPACE)  &kp LG(LS(S))  &kp SCROLLLOCK  &kp PAUSE_BREAK
-                                      &trans     &trans     &trans                                                                   &trans  &trans        &trans
+&studio_unlock  &mt LC(LS(TAB)) LC(TAB)  &kp LC(W)            &kp F3     &kp F4     &mt LS(LC(T)) LC(T)                                &mmv MOVE_UP                     &kp F1  &kp F2        &kp F3         &kp F4         &kp F5          &kp F6
+&trans          &kp LC(A)                &mt LC(LS(S)) LC(S)  &mkp MCLK  &kp LC(F)  &mkp MB4                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7  &kp F8        &kp F9         &kp F10        &kp F11         &kp F12
+&kp LC(LS(Z))   &kp LC(Z)                &kp LC(X)            &kp LC(C)  &kp LC(V)  &mkp MB5             &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &kp LEFT_GUI  &kp LG(SPACE)  &kp LG(LS(S))  &kp SCROLLLOCK  &kp PAUSE_BREAK
+                                                              &trans     &trans     &trans                                                                              &trans  &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
