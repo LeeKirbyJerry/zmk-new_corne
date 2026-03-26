@@ -543,7 +543,7 @@ combos:
 - p: [23, 10]
   k: U
   l: [One-Handed]
-- p: [10, 25]
+- p: [24, 25]
   k: V
   l: [One-Handed]
 - p: [8, 26]
