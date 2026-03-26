@@ -45,7 +45,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
-  - {t: '$$mdi:keyboard-space$$', h: Shortcuts}
+  - '&td0'
   - '&ToShrome'
   - {t: '$$mdi:keyboard-space$$', h: toggle}
   - $$mdi:apple-keyboard-option$$
@@ -241,7 +241,7 @@ layers:
   - PAUSE BREAK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
