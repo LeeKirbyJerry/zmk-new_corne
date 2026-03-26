@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "behaviors/character_map.dtsi"
-#include "behaviors/send_string.dtsi"
 
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -36,16 +34,12 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    chosen {
-        zmk,charmap = &charmap_us;
-    };
     behaviors {
-        ZMK_SEND_STRING(sh_because, "because");
         ak_c: ak_c {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp C>;
-            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &sh_because};
+            akt_qc { trigger-keys = <Q>; max-prior-idle-ms = <300>; bindings = <&kp BSPC &kp B &kp E &kp C &kp A &kp U &kp S &kp E>;};
         };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
