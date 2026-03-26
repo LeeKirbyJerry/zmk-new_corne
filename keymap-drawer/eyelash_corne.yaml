@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
@@ -91,7 +91,7 @@ layers:
   - {t: ., s: '>'}
   - {t: '-', s: _}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-tab$$
+  - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
