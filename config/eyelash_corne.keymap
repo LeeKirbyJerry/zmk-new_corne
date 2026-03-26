@@ -597,14 +597,13 @@
 &kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
-
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
         };
 
         Shrome {
             bindings = <
 &kp ESC       &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&kp BSPC      &kp C      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E       &kp I      &mm_comma
+&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E       &kp I      &mm_comma
 &kp LC(BSPC)  &mm_quote  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp DOT    &mm_hyphen  &mm_slash  &as TAB
                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
             >;
