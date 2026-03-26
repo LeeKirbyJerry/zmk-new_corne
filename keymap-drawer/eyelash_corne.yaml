@@ -104,7 +104,7 @@ layers:
   - '&as N7'
   - '&as N8'
   - '&as N9'
-  - '&td_plus'
+  - '&mt_plus'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '`', s: '~'}
   - {t: '[', s: '{'}
@@ -132,7 +132,7 @@ layers:
   - '&as N2'
   - '&as N3'
   - '&as N4'
-  - '&td_minus'
+  - '&mt_minus'
   - BRIGHTNESS AUTO
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+*
