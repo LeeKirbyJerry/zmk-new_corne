@@ -554,7 +554,22 @@
         ToSteno: ToSteno {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+             bindings
+                = <&macro_press &kp E &kp R &kp F &kp V &kp I &kp K &kp H>
+                , <&macro_wait_time 100>
+                , <&macro_release &kp E &kp R &kp F &kp V &kp I &kp K &kp H>
+                ;
+            label = "TOSTENO";
+        };
+
+        ExitSteno: ExitSteno {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+                bindings
+                = <&macro_press &kp E &kp R &kp F &kp V &kp U &kp H>
+                , <&macro_wait_time 100>
+                , <&macro_release &kp E &kp R &kp F &kp V &kp U &kp H>
+                ;
             label = "TOSTENO";
         };
     };
