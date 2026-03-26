@@ -24,6 +24,7 @@
     time-to-max-speed-ms = <800>;
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
+    delay-ms = <0>;                   // 0
 };
 
 &mt { flavor = "tap-preferred"; };
@@ -89,7 +90,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            bindings = <&kp MINUS>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp MINUS>, <&kp DOUBLE_QUOTE>;
         };
 
         mm_quote: mod_morph_quote {
@@ -111,6 +112,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
             bindings = <&kp BSPC>, <&kp DEL>;
+        };
+
+        mm_period: mod_morph_period {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp DOT>, <&kp UNDERSCORE>;
         };
     };
 
