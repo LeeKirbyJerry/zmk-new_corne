@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Shortcuts}
   - '&ToShrome'
-  - {t: '$$mdi:keyboard-tab$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: toggle}
   - $$mdi:apple-keyboard-option$$
   Shrome:
   - $$mdi:keyboard-esc$$
@@ -145,15 +145,15 @@ layers:
   - {t: '1', s: '!', type: held}
   - {t: '9', s: (}
   - {t: '2', s: '@'}
-  - {t: Sft+_, type: held alternate}
+  - Sft+_
   - {t: '0', s: )}
   Nav:
   - $$mdi:progress-download$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
-  - '%'
+  - $$mdi:pan-up$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - HOME
   - Ctl+$$mdi:arrow-left-bold$$
@@ -163,10 +163,10 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -199,7 +199,7 @@ layers:
   Shortcuts:
   - '&studio_unlock'
   - F1
-  - F2
+  - Ctl+W
   - F3
   - F4
   - F5
@@ -226,10 +226,10 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -303,3 +303,15 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [8, 23]
   k: $$mdi:apple-keyboard-control$$
+- p: [3, 16]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [9, 24]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [2, 15]
+  k: $$mdi:apple-keyboard-option$$
+- p: [10, 25]
+  k: $$mdi:apple-keyboard-option$$
+- p: [1, 14]
+  k: LGUI
+- p: [11, 26]
+  k: RGUI
