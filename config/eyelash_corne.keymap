@@ -634,10 +634,10 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&trans  &kp I   &kp E   &kp N   &kp T   &kp O                     &trans          &kp A   &kp R   &kp S   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &to 1   &trans  &trans
+&kp ESC   &kp R    &kp O    &kp N      &kp I   &kp SQT                    &trans          &kp A  &kp I   &kp N      &kp O    &kp R   &kp ESC
+&kp BSPC  &kp S    &kp A    &kp T      &kp E   &kp D              &trans  &trans  &trans  &kp D  &kp E   &kp T      &kp A    &kp S   &kp BSPC
+&trans    &kp DOT  &kp DOT  &kp COMMA  &kp G   &kp B    &trans            &trans          &kp N  &kp G   &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
+                            &trans     &trans  &trans                                     &to 1  &trans  &trans
             >;
         };
 
