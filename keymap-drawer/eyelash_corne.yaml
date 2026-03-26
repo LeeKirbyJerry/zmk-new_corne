@@ -416,7 +416,7 @@ combos:
 - p: [16, 17, 23, 24]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [14, 2, 46, 47, 43, 24, 9]
-  k: A
+  k: '&ToSteno'
 - p: [3, 6]
   k: B
 - p: [2, 6]
