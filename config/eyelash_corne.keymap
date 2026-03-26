@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            bindings = <&kp MINUS>, <&kp QUOTE>;
+            bindings = <&kp MINUS>, <&kp SINGLE_QUOTE>;
         };
 
         mm_quote: mod_morph_quote {
