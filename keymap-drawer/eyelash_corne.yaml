@@ -64,7 +64,7 @@ layers:
   - J
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - C
+  - '&ak_c'
   - R
   - S
   - T
