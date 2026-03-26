@@ -295,48 +295,48 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   One-Handed:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - I
-  - E
-  - N
-  - T
+  - $$mdi:keyboard-esc$$
+  - R
   - O
+  - N
+  - I
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - A
+  - I
+  - N
+  - O
   - R
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - S
+  - A
+  - T
+  - E
+  - D
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - D
+  - E
+  - T
+  - A
+  - S
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., s: '>'}
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - G
+  - B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - G
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,128 +395,190 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [4, 17]
   k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [15, 16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [8, 23]
   k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [3, 16]
   k: $$mdi:apple-keyboard-shift$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [9, 24]
   k: $$mdi:apple-keyboard-shift$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [2, 15]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [10, 25]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [1, 14]
   k: LGUI
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [11, 26]
   k: RGUI
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [16, 17, 23, 24]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [14, 2, 10, 26]
   k: '&ToSteno'
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [15, 3]
   k: B
+  l: [One-Handed]
 - p: [17, 15]
   k: C
+  l: [One-Handed]
 - p: [17, 14]
   k: D
+  l: [One-Handed]
 - p: [2, 4]
   k: F
+  l: [One-Handed]
 - p: [5, 2]
   k: G
+  l: [One-Handed]
 - p: [16, 17]
   k: H
+  l: [One-Handed]
 - p: [16, 1]
   k: J
+  l: [One-Handed]
 - p: [15, 4]
   k: K
+  l: [One-Handed]
 - p: [17, 3]
   k: L
+  l: [One-Handed]
 - p: [17, 1]
   k: M
+  l: [One-Handed]
 - p: [4, 3]
   k: P
+  l: [One-Handed]
 - p: [16, 14]
   k: Q
+  l: [One-Handed]
 - p: [17, 2]
   k: U
+  l: [One-Handed]
 - p: [15, 16]
   k: V
+  l: [One-Handed]
 - p: [14, 4]
   k: W
+  l: [One-Handed]
 - p: [14, 3]
   k: X
+  l: [One-Handed]
 - p: [4, 3]
   k: Y
+  l: [One-Handed]
 - p: [1, 3]
   k: Z
+  l: [One-Handed]
 - p: [15, 14]
   k: ':'
+  l: [One-Handed]
 - p: [3, 2]
   k: {t: ;, s: ':'}
+  l: [One-Handed]
 - p: [17, 4, 3]
   k: '?'
+  l: [One-Handed]
 - p: [5, 16, 15]
   k: '!'
+  l: [One-Handed]
 - p: [5, 4, 3]
   k: {t: '-', s: _}
+  l: [One-Handed]
 - p: [16, 3]
   k: {t: /, s: '?'}
+  l: [One-Handed]
 - p: [5, 16]
   k: {t: \, s: '|'}
+  l: [One-Handed]
 - p: [9, 25]
   k: B
+  l: [One-Handed]
 - p: [23, 25]
   k: C
+  l: [One-Handed]
 - p: [23, 26]
   k: D
+  l: [One-Handed]
 - p: [8, 10]
   k: F
+  l: [One-Handed]
 - p: [8, 11]
   k: G
+  l: [One-Handed]
 - p: [24, 23]
   k: H
+  l: [One-Handed]
 - p: [24, 11]
   k: J
+  l: [One-Handed]
 - p: [8, 25]
   k: K
+  l: [One-Handed]
 - p: [23, 9]
   k: L
+  l: [One-Handed]
 - p: [23, 11]
   k: M
+  l: [One-Handed]
 - p: [9, 10]
   k: P
+  l: [One-Handed]
 - p: [24, 26]
   k: Q
+  l: [One-Handed]
 - p: [23, 10]
   k: U
+  l: [One-Handed]
 - p: [10, 25]
   k: V
+  l: [One-Handed]
 - p: [8, 26]
   k: W
+  l: [One-Handed]
 - p: [9, 26]
   k: X
+  l: [One-Handed]
 - p: [8, 9]
   k: Y
+  l: [One-Handed]
 - p: [9, 11]
   k: Z
+  l: [One-Handed]
 - p: [25, 26]
   k: ':'
+  l: [One-Handed]
 - p: [10, 11]
   k: {t: ;, s: ':'}
+  l: [One-Handed]
 - p: [23, 9, 10]
   k: '?'
+  l: [One-Handed]
 - p: [8, 24, 25]
   k: '!'
+  l: [One-Handed]
 - p: [8, 9, 10]
   k: {t: '-', s: _}
+  l: [One-Handed]
 - p: [24, 10]
   k: {t: /, s: '?'}
+  l: [One-Handed]
 - p: [8, 24]
   k: {t: \, s: '|'}
+  l: [One-Handed]
 - p: [30, 31, 32]
   k: {t: One-Handed, h: toggle}
   l: [Shrome, QWERTY]
