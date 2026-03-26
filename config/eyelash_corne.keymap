@@ -114,7 +114,7 @@
             bindings = <&kp BSPC>, <&kp DEL>;
         };
 
-        mm_period: mod_morph_period {
+        mm_dot: mod_morph_dot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -252,7 +252,7 @@
             bindings = <
 &kp ESC       &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
 &kp BSPC      &kp C      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E       &kp I      &mm_comma
-&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp DOT    &mm_hyphen  &mm_slash  &as TAB
+&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &kp V        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp mm_dot    &mm_hyphen  &mm_slash  &as TAB
                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
