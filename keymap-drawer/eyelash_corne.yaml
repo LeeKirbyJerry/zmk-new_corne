@@ -415,7 +415,7 @@ combos:
   k: RGUI
 - p: [16, 17, 23, 24]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [14, 2, 46, 47, 43, 24, 9]
+- p: [14, 2, 10, 26]
   k: '&ToSteno'
 - p: [15, 3]
   k: B
