@@ -79,35 +79,35 @@
         mm_comma: mod_morph_comma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD(LS)>;
+            mods = <(MOD_LSFT)>;
             bindings = <&kp COMMA>, <&kp QUESTION>;
         };
 
         mm_hyphen: mod_morph_hyphen {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD(LS)>;
+            mods = <(MOD_LSFT)>;
             bindings = <&kp MINUS>, <&kp QUOTE>;
         };
 
         mm_quote: mod_morph_quote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD(LS)>;
+            mods = <(MOD_LSFT)>;
             bindings = <&kp SQT>, <&kp UNDERSCORE>;
         };
 
         mm_slash: mod_morph_slash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD(LS)>;
+            mods = <(MOD_LSFT)>;
             bindings = <&kp FSLH>, <&kp BSLH>;
         };
 
         mm_backspace: mod_morph_backspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <MOD(LS)>;
+            mods = <(MOD_LSFT)>;
             bindings = <&kp BSPC>, <&kp DEL>;
         };
     };
