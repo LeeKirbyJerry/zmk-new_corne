@@ -210,7 +210,7 @@
 
         ohl_h: ohl_h {
             bindings = <&kp H>;
-            key-positions = <16 15>; // 16 15 -> h
+            key-positions = <16 17>; // 16 15 -> h
         };
 
         ohl_j: ohl_j {
@@ -338,7 +338,7 @@
 
         ohr_h: ohr_h {
             bindings = <&kp H>;
-            key-positions = <24 25>; // 24 25 -> h
+            key-positions = <24 23>; // 24 25 -> h
         };
 
         ohr_j: ohr_j {
@@ -517,7 +517,7 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt LSFT(N8) PLUS                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                            &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
 &mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
 &kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
                                      &kp SPACE  &kp SPACE  &kp SPACE                                                                            &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
