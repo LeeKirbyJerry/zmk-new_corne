@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
-  - '&ToShrome'
+  - {t: ONEHANDED, h: '5'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
@@ -291,7 +291,56 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  One-Handed:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - I
+  - E
+  - N
+  - T
+  - O
+  - {t: '$$mdi:transfer$$', type: trans}
+  - A
+  - R
+  - S
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: QWERTY}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Steno:
@@ -368,3 +417,53 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [14, 2, 46, 47, 43, 24, 9]
   k: A
+- p: [3, 6]
+  k: B
+- p: [2, 6]
+  k: C
+- p: [2, 8]
+  k: D
+- p: [1, 5]
+  k: F
+- p: [1, 7]
+  k: G
+- p: [4, 6]
+  k: H
+- p: [4, 7]
+  k: J
+- p: [1, 6]
+  k: K
+- p: [2, 3]
+  k: L
+- p: [2, 7]
+  k: M
+- p: [3, 5]
+  k: P
+- p: [4, 8]
+  k: Q
+- p: [2, 5]
+  k: U
+- p: [5, 6]
+  k: V
+- p: [1, 8]
+  k: W
+- p: [3, 8]
+  k: X
+- p: [1, 3]
+  k: Y
+- p: [3, 7]
+  k: Z
+- p: [6, 8]
+  k: ':'
+- p: [5, 7]
+  k: {t: ;, s: ':'}
+- p: [2, 3, 5]
+  k: '?'
+- p: [1, 4, 6]
+  k: '!'
+- p: [1, 3, 5]
+  k: {t: '-', s: _}
+- p: [4, 5]
+  k: {t: /, s: '?'}
+- p: [1, 4]
+  k: {t: \, s: '|'}
