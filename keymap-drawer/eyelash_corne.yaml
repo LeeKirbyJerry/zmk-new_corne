@@ -211,8 +211,8 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
+  - Ctl+A
+  - Ctl+S
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
@@ -225,7 +225,7 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+Z
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -234,9 +234,9 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:apple-keyboard-command$$
+  - Gui+$$mdi:keyboard-space$$
+  - Gui+Sft+S
   - SCROLLLOCK
   - PAUSE BREAK
   - {type: held}
