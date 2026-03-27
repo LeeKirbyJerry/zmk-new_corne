@@ -56,7 +56,7 @@ layers:
   - Y
   - M
   - K
-  - $$mdi:pan-up$$
+  - '&msc MOVE_Y(5)'
   - Z
   - F
   - O
@@ -69,9 +69,9 @@ layers:
   - S
   - T
   - D
+  - '&msc MOVE_Y(-10)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&msc MOVE_Y(10)'
   - P
   - N
   - A
@@ -85,7 +85,7 @@ layers:
   - '&ak_v'
   - Q
   - $$mdi:volume-off$$
-  - $$mdi:pan-down$$
+  - '&msc MOVE_Y(-5)'
   - B
   - H
   - {t: ., s: _}
@@ -144,9 +144,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - '|'
   - _
-  - '&as N0'
+  - '&'
   Nav:
   - $$mdi:progress-download$$
   - $$mdi:mouse-scroll-wheel$$
@@ -302,7 +302,7 @@ layers:
   - I
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - A
+  - <
   - I
   - N
   - O
@@ -459,7 +459,7 @@ combos:
 - p: [17, 1]
   k: M
   l: [One-Handed]
-- p: [4, 3]
+- p: [3, 2]
   k: P
   l: [One-Handed]
 - p: [16, 14]
