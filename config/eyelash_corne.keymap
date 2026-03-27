@@ -557,6 +557,17 @@
             label = "sh_because";
         };
 
+        del_line: del_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp HOME &kp HOME &kp RS(END) &kp BSPC &kp BSPC &kp DOWN &kp END>,
+                <&macro_press>;
+
+            label = "sh_because";
+        };
+
         shifted: macro_shifted_kp {
             #binding-cells = <1>;
             label = "MACRO_SHIFTED_KP";
@@ -633,7 +644,7 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp ESC            &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
+&td_escape            &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
 &mm_backspace      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
@@ -644,7 +655,7 @@
 
         Shrome {
             bindings = <
-&kp ESC        &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&td_escape        &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
 &mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &kp E       &kp I      &mm_comma
 &kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &kp DOT    &mm_hyphen  &mm_slash  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
