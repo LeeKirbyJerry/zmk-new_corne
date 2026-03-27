@@ -441,7 +441,7 @@ combos:
 - p: [2, 4]
   k: F
   l: [One-Handed]
-- p: [5, 2]
+- p: [1, 4]
   k: G
   l: [One-Handed]
 - p: [16, 17]
@@ -486,22 +486,22 @@ combos:
 - p: [15, 14]
   k: ':'
   l: [One-Handed]
-- p: [3, 2]
+- p: [2, 1]
   k: {t: ;, s: ':'}
   l: [One-Handed]
-- p: [17, 4, 3]
+- p: [17, 3, 2]
   k: '?'
   l: [One-Handed]
-- p: [5, 16, 15]
+- p: [16, 15, 4]
   k: '!'
   l: [One-Handed]
-- p: [5, 4, 3]
+- p: [4, 3, 2]
   k: {t: '-', s: _}
   l: [One-Handed]
-- p: [16, 3]
+- p: [16, 4]
   k: {t: /, s: '?'}
   l: [One-Handed]
-- p: [5, 16]
+- p: [16, 2]
   k: {t: \, s: '|'}
   l: [One-Handed]
 - p: [9, 25]
