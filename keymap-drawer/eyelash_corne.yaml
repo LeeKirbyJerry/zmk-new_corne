@@ -215,7 +215,7 @@ layers:
   - {t: Ctl+S, h: Ctl+Sft+S}
   - {t: 'Alt+$$mdi:arrow-down-bold$$', h: 'Sft+Alt+$$mdi:arrow-down-bold$$'}
   - Ctl+F
-  - '&mkp MB4'
+  - '&td_zoom'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
