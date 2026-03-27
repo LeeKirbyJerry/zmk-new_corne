@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(50)'
+  - '&msc MOVE_Y(10)'
   - Y
   - U
   - I
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - $$mdi:volume-off$$
-  - '&msc MOVE_Y(-50)'
+  - '&msc MOVE_Y(-10)'
   - N
   - M
   - {t: ',', s: <}
@@ -56,7 +56,7 @@ layers:
   - Y
   - M
   - K
-  - $$mdi:pan-up$$
+  - '&msc MOVE_Y(5)'
   - Z
   - F
   - O
@@ -69,9 +69,9 @@ layers:
   - S
   - T
   - D
+  - '&msc MOVE_Y(10)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&msc MOVE_Y(-10)'
   - P
   - N
   - A
@@ -85,7 +85,7 @@ layers:
   - '&ak_v'
   - Q
   - $$mdi:volume-off$$
-  - $$mdi:pan-down$$
+  - '&msc MOVE_Y(-5)'
   - B
   - H
   - {t: ., s: _}
@@ -144,9 +144,9 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - '|'
   - _
-  - '&as N0'
+  - '&'
   Nav:
   - $$mdi:progress-download$$
   - $$mdi:mouse-scroll-wheel$$
@@ -302,7 +302,7 @@ layers:
   - I
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - A
+  - <
   - I
   - N
   - O
@@ -441,7 +441,7 @@ combos:
 - p: [2, 4]
   k: F
   l: [One-Handed]
-- p: [5, 2]
+- p: [1, 4]
   k: G
   l: [One-Handed]
 - p: [16, 17]
@@ -459,7 +459,7 @@ combos:
 - p: [17, 1]
   k: M
   l: [One-Handed]
-- p: [4, 3]
+- p: [3, 2]
   k: P
   l: [One-Handed]
 - p: [16, 14]
@@ -486,22 +486,22 @@ combos:
 - p: [15, 14]
   k: ':'
   l: [One-Handed]
-- p: [3, 2]
+- p: [2, 1]
   k: {t: ;, s: ':'}
   l: [One-Handed]
-- p: [17, 4, 3]
+- p: [17, 3, 2]
   k: '?'
   l: [One-Handed]
-- p: [5, 16, 15]
+- p: [16, 15, 4]
   k: '!'
   l: [One-Handed]
-- p: [5, 4, 3]
+- p: [4, 3, 2]
   k: {t: '-', s: _}
   l: [One-Handed]
-- p: [16, 3]
+- p: [16, 4]
   k: {t: /, s: '?'}
   l: [One-Handed]
-- p: [5, 16]
+- p: [16, 2]
   k: {t: \, s: '|'}
   l: [One-Handed]
 - p: [9, 25]
@@ -593,11 +593,16 @@ combos:
   l: [One-Handed]
 - p: [4, 17, 23, 8, 23]
   k: {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [16, 9, 24, 3]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [2, 15, 10, 25]
   k: {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [24, 25, 23]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [1, 14, 11, 26]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]

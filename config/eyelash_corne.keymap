@@ -275,7 +275,7 @@
 
         ohl_g: ohl_g {
             bindings = <&kp G>;
-            key-positions = <5 2>; // 5 2 -> g
+            key-positions = <1 4>; // 5 2 -> g
             layers = <6>;
         };
 
@@ -311,7 +311,7 @@
 
         ohl_p: ohl_p {
             bindings = <&kp P>;
-            key-positions = <4 3>; // 4 3 -> p
+            key-positions = <3 2>; // 4 3 -> p
             layers = <6>;
         };
 
@@ -365,37 +365,37 @@
 
         ohl_semicolon: ohl_semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <3 2>; // 3 2 -> semicolon
+            key-positions = <2 1>; // 3 2 -> semicolon
             layers = <6>;
         };
 
         ohl_question: ohl_question {
             bindings = <&kp QUESTION>;
-            key-positions = <17 4 3>; // 17 4 3 -> question mark
+            key-positions = <17 3 2>; // 17 4 3 -> question mark
             layers = <6>;
         };
 
         ohl_exclamation: ohl_exclamation {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <5 16 15>; // 5 16 15 -> exclamation mark
+            key-positions = <16 15 4>; // 5 16 15 -> exclamation mark
             layers = <6>;
         };
 
         ohl_hyphen: ohl_hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <5 4 3>; // 5 4 3 -> hyphen
+            key-positions = <4 3 2>; // 5 4 3 -> hyphen
             layers = <6>;
         };
 
         ohl_slash: ohl_slash {
             bindings = <&kp FSLH>;
-            key-positions = <16 3>; // 16 3 -> slash
+            key-positions = <16 4>; // 16 3 -> slash
             layers = <6>;
         };
 
         ohl_backslash: ohl_backslash {
             bindings = <&kp BSLH>;
-            key-positions = <5 16>; // 5 16 -> backward slash
+            key-positions = <16 2>; // 5 16 -> backward slash
             layers = <6>;
         };
 
@@ -580,35 +580,30 @@
             bindings = <&kp LC(ENTER)>;
             key-positions = <4 17 23 8 23>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         ShiftEnter {
             bindings = <&kp LS(ENTER)>;
             key-positions = <16 9 24 3>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         AltEnter {
             bindings = <&kp LA(ENTER)>;
             key-positions = <2 15 10 25>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         REnter {
             bindings = <&kp ENTER>;
             key-positions = <24 25 23>;
             layers = <0 1 2 3 4 5 6>;
-            
         };
 
         WinEnter {
             bindings = <&kp LG(ENTER)>;
             key-positions = <1 14 11 26>;
             layers = <0 1 2 3 4 5 6>;
-
         };
     };
 
@@ -711,21 +706,21 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
+&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(10)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
 &mm_backspace      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
+&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-10)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Shrome {
             bindings = <
-&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
-                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
+&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(5)                     &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(10)  &trans           &msc MOVE_Y(-10)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE                     &msc MOVE_Y(-5)                    &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -735,10 +730,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
-                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE     &kp LBKT        &kp RBKT       &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)    &kp LS(RPAR)   &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS       &kp LS(LT)     &kp LS(GT)     &mm_slash     &kp U
+                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp PIPE      &kp UNDERSCORE  &kp AMPERSAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -780,7 +775,7 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                           &trans          &kp A           &kp I      &kp N      &kp O    &kp R   &kp ESC
+&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                           &trans          &kp APOSTROPHE  &kp I      &kp N      &kp O    &kp R   &kp ESC
 &kp BSPC  &kp S    &kp A    &kp T      &kp E      &kp D                     &trans  &trans  &trans  &kp D           &kp E      &kp T      &kp A    &kp S   &kp BSPC
 &trans    &kp DOT  &kp DOT  &kp COMMA  &kp G      &kp B           &trans            &trans          &kp N           &kp G      &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
                             &trans     &kp SPACE  &kp LEFT_SHIFT                                    &kp LEFT_SHIFT  &kp SPACE  &trans
