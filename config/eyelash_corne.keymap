@@ -77,7 +77,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt ESC DEL>, <&kp DEL>;
+            bindings = <&mt ESC DEL>, <&del_line>;
         };
 
         as_ht: autoshift_hold_tap {
