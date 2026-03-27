@@ -88,7 +88,7 @@ layers:
   - $$mdi:pan-down$$
   - B
   - H
-  - {t: ., s: '>'}
+  - {t: ., s: _}
   - {t: '-', s: '"'}
   - {t: /, s: \}
   - '&as TAB'
