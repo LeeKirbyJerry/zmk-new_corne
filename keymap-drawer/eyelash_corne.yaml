@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-esc$$
+  - '&td_escape'
   - Q
   - W
   - E
@@ -50,7 +50,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
-  - $$mdi:keyboard-esc$$
+  - '&td_escape'
   - W
   - L
   - Y
@@ -82,7 +82,7 @@ layers:
   - {t: '''', s: _}
   - X
   - G
-  - V
+  - '&ak_v'
   - Q
   - $$mdi:volume-off$$
   - $$mdi:pan-down$$
