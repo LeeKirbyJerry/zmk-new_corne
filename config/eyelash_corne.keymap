@@ -710,9 +710,9 @@
 
         Shrome {
             bindings = <
-&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                                  &msc MOVE_Y(5)                    &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(-10)  &trans           &msc MOVE_Y(10)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE                      &msc MOVE_Y(-5)                   &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(5)                     &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(10)  &trans           &msc MOVE_Y(-10)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE                     &msc MOVE_Y(-5)                    &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
