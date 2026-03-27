@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - '&msc MOVE_Y(50)'
+  - '&msc MOVE_Y(10)'
   - Y
   - U
   - I
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - $$mdi:volume-off$$
-  - '&msc MOVE_Y(-50)'
+  - '&msc MOVE_Y(-10)'
   - N
   - M
   - {t: ',', s: <}
