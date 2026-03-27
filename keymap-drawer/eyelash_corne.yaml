@@ -595,7 +595,7 @@ combos:
   k: {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [16, 9, 24, 3]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
 - p: [2, 15, 10, 25]
   k: {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
