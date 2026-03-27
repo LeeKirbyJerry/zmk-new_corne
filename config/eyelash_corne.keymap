@@ -573,35 +573,30 @@
             bindings = <&kp LC(ENTER)>;
             key-positions = <4 17 23 8 23>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         ShiftEnter {
             bindings = <&kp ENTER>;
             key-positions = <16 9 24 3>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         AltEnter {
             bindings = <&kp LA(ENTER)>;
             key-positions = <2 15 10 25>;
             layers = <0 1 2 3 4 5 6>;
-
         };
 
         REnter {
             bindings = <&kp ENTER>;
             key-positions = <24 25 23>;
             layers = <0 1 2 3 4 5 6>;
-            
         };
 
         WinEnter {
             bindings = <&kp LG(ENTER)>;
             key-positions = <1 14 11 26>;
             layers = <0 1 2 3 4 5 6>;
-
         };
     };
 
@@ -704,9 +699,9 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(50)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
+&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(10)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
 &mm_backspace      &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-50)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
+&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp C_MUTE              &msc MOVE_Y(-10)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
