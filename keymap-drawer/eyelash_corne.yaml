@@ -75,7 +75,7 @@ layers:
   - P
   - N
   - A
-  - E
+  - '&ak_e'
   - I
   - {t: ',', s: '?'}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
@@ -591,3 +591,13 @@ combos:
 - p: [37, 38, 39]
   k: {t: Shrome, h: toggle}
   l: [One-Handed]
+- p: [4, 17, 23, 8, 23]
+  k: {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
+- p: [16, 9, 24, 3]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [2, 15, 10, 25]
+  k: {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
+- p: [24, 25, 23]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [1, 14, 11, 26]
+  k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
