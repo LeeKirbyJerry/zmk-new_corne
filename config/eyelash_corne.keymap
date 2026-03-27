@@ -304,7 +304,7 @@
 
         ohl_p: ohl_p {
             bindings = <&kp P>;
-            key-positions = <4 3>; // 4 3 -> p
+            key-positions = <3 2>; // 4 3 -> p
             layers = <6>;
         };
 
@@ -705,15 +705,15 @@
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Shrome {
             bindings = <
-&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                        &msc SCRL_UP            &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &trans  &trans          &trans  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE            &msc SCRL_DOWN          &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
-                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                 &ToChinese  &kp SPACE  &lt 3 TAB
+&td_escape     &kp W      &kp L  &kp Y      &kp M        &kp K                                  &msc MOVE_Y(5)                    &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&mm_backspace  &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(-10)  &trans           &msc MOVE_Y(10)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)   &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp C_MUTE                      &msc MOVE_Y(-5)                   &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -723,10 +723,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE       &kp LBKT        &kp RBKT      &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)    &kp LS(LPAR)    &kp LS(RPAR)  &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)    &kp MINUS       &kp LS(LT)    &kp LS(GT)     &mm_slash     &kp U
-                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp LEFT_SHIFT  &kp UNDERSCORE  &as N0
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE     &kp LBKT        &kp RBKT       &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)    &kp LS(RPAR)   &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS       &kp LS(LT)     &kp LS(GT)     &mm_slash     &kp U
+                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp PIPE      &kp UNDERSCORE  &kp AMPERSAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -768,7 +768,7 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                           &trans          &kp A           &kp I      &kp N      &kp O    &kp R   &kp ESC
+&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                           &trans          &kp APOSTROPHE  &kp I      &kp N      &kp O    &kp R   &kp ESC
 &kp BSPC  &kp S    &kp A    &kp T      &kp E      &kp D                     &trans  &trans  &trans  &kp D           &kp E      &kp T      &kp A    &kp S   &kp BSPC
 &trans    &kp DOT  &kp DOT  &kp COMMA  &kp G      &kp B           &trans            &trans          &kp N           &kp G      &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
                             &trans     &kp SPACE  &kp LEFT_SHIFT                                    &kp LEFT_SHIFT  &kp SPACE  &trans
