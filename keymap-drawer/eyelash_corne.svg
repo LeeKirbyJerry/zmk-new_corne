@@ -630,22 +630,6 @@ rect.held, rect.combo.held {
 </text>
 <text x="784" y="155" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-14">
-<path d="M196,144 l-37,1" class="combo"/>
-<path d="M196,144 l37,1" class="combo"/>
-<rect rx="6" ry="6" x="182" y="131" width="28" height="26" class="combo"/>
-<a href="#Shrome">
-<text x="196" y="144" class="combo tap layer-activator">Shrome</text>
-</a><text x="196" y="155" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-15">
-<path d="M784,144 l-37,1" class="combo"/>
-<path d="M784,144 l37,1" class="combo"/>
-<rect rx="6" ry="6" x="770" y="131" width="28" height="26" class="combo"/>
-<a href="#Shrome">
-<text x="784" y="144" class="combo tap layer-activator">Shrome</text>
-</a><text x="784" y="155" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-Shrome">
@@ -982,22 +966,6 @@ rect.held, rect.combo.held {
 <tspan x="784" dy="-0.6em">One-</tspan><tspan x="784" dy="1.2em">Handed</tspan>
 </text>
 <text x="784" y="155" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-14">
-<path d="M196,144 l-37,1" class="combo"/>
-<path d="M196,144 l37,1" class="combo"/>
-<rect rx="6" ry="6" x="182" y="131" width="28" height="26" class="combo"/>
-<a href="#Shrome">
-<text x="196" y="144" class="combo tap layer-activator">Shrome</text>
-</a><text x="196" y="155" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-15">
-<path d="M784,144 l-37,1" class="combo"/>
-<path d="M784,144 l37,1" class="combo"/>
-<rect rx="6" ry="6" x="770" y="131" width="28" height="26" class="combo"/>
-<a href="#Shrome">
-<text x="784" y="144" class="combo tap layer-activator">Shrome</text>
-</a><text x="784" y="155" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2869,6 +2837,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="46" width="28" height="26" class="combo"/>
 <text x="756" y="59" class="combo tap">\</text>
 <text x="756" y="48" class="combo shifted">|</text>
+</g>
+<g class="combo combopos-62">
+<path d="M196,144 l-37,1" class="combo"/>
+<path d="M196,144 l37,1" class="combo"/>
+<rect rx="6" ry="6" x="182" y="131" width="28" height="26" class="combo"/>
+<a href="#Shrome">
+<text x="196" y="144" class="combo tap layer-activator">Shrome</text>
+</a><text x="196" y="155" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-63">
+<path d="M784,144 l-37,1" class="combo"/>
+<path d="M784,144 l37,1" class="combo"/>
+<rect rx="6" ry="6" x="770" y="131" width="28" height="26" class="combo"/>
+<a href="#Shrome">
+<text x="784" y="144" class="combo tap layer-activator">Shrome</text>
+</a><text x="784" y="155" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

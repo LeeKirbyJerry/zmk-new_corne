@@ -587,7 +587,7 @@ combos:
   l: [Shrome, QWERTY]
 - p: [30, 31, 32]
   k: {t: Shrome, h: toggle}
-  l: [Shrome, QWERTY]
+  l: [One-Handed]
 - p: [37, 38, 39]
   k: {t: Shrome, h: toggle}
-  l: [Shrome, QWERTY]
+  l: [One-Handed]
