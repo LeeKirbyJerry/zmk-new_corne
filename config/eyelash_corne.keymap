@@ -590,7 +590,7 @@
                 <&kp HOME &kp HOME &kp RS(END) &kp BSPC &kp BSPC &kp DOWN &kp END>,
                 <&macro_press>;
 
-            label = "sh_because";
+            label = "del_line";
         };
 
         shifted: macro_shifted_kp {
