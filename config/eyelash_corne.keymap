@@ -744,8 +744,8 @@
             bindings = <
 &bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
 &trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
-&bt BT_CLR   &out OUT_USB  &out OUT_BLE    &bt BT_PRV      &bt BT_NXT       &mkp MB5        &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS            &kp LBRC        &kp RBRC             &kp PIPE   &kp TILDE
-                                           &trans          &trans           &kp SPACE                                                                  &to 1      &trans              &trans
+&bt BT_CLR   &out OUT_USB  &msc SCRL_LEFT  &out OUT_BLE    &msc SCRL_RIGHT  &mkp MB5        &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS            &kp LBRC        &kp RBRC             &kp PIPE   &kp TILDE
+                                           &bt BT_PRV      &bt BT_NXT       &kp SPACE                                                                  &to 1      &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
