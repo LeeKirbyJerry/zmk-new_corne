@@ -98,6 +98,13 @@
             bindings = <&mt DEL ESC>, <&del_line>;
         };
 
+        td_zoom: td_zoom {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LC(MINUS) LC(PLUS)>, <&kp LC(N0)>;
+        };
+
         as_ht: autoshift_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
@@ -577,7 +584,7 @@
         };
 
         ShiftEnter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp LS(ENTER)>;
             key-positions = <16 9 24 3>;
             layers = <0 1 2 3 4 5 6>;
 
