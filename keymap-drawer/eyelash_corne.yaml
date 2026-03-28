@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - A
   - S
   - D
@@ -63,7 +63,7 @@ layers:
   - U
   - J
   - {t: ;, s: ':'}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&ak_c'
   - R
   - S
@@ -112,7 +112,7 @@ layers:
   - Sft+{
   - Sft+}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&as N6'
   - '&as N1'
   - '&as N5'
@@ -231,7 +231,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - '&td_bius'
-  - {t: Ctl+0, s: Ctl+)}
+  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
