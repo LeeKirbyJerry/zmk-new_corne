@@ -343,7 +343,62 @@ layers:
   - '&ExitSteno'
   - N
   - M
-  '5':
+  OHNumber:
+  - {t: '`', s: '~'}
+  - {t: Sft+1, s: Sft+!}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - Sft++
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft++
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: Sft+1, s: Sft+!}
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '6', s: ^}
+  - {t: '1', s: '!'}
+  - {t: '5', s: '%'}
+  - {t: '0', s: )}
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - {t: ., s: '>'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: ., s: '>'}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Windows:
+  - '&soft_off'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+Gui+`, s: Ctl+Gui+~}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+5, s: Ctl+%}
+  - Ctl+Gui+T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -353,6 +408,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+Sft+6, s: Ctl+Sft+^}
+  - {t: Ctl+1, s: Ctl+!}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -361,22 +418,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+Sft+T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+C
+  - Gui+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,40 +444,40 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [4, 17]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [15, 16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [8, 23]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [3, 16]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [9, 24]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [2, 15]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [10, 25]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [1, 14]
   k: LGUI
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [11, 26]
   k: RGUI
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [16, 17, 23, 24]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [14, 2, 10, 26]
   k: '&ToSteno'
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [15, 3]
   k: B
   l: [One-Handed]
@@ -593,16 +642,16 @@ combos:
   l: [One-Handed]
 - p: [4, 17, 23, 8, 23]
   k: {t: 'Ctl+$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [16, 9, 24, 3]
   k: {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [2, 15, 10, 25]
   k: {t: 'Alt+$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [24, 25, 23]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
 - p: [1, 14, 11, 26]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
-  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, '5', One-Handed]
+  l: [QWERTY, Shrome, Symbols, Nav, Shortcuts, OHNumber, One-Handed]
