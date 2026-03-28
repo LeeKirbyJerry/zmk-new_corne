@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 400  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // 10
 
 #include <input/processors.dtsi>
@@ -181,7 +181,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&mm_scroll_up>, <&mm_scroll_down>;
 
-        //  tap-ms = <100>;
+          tap-ms = <100>;
     };
 
     combos {
@@ -730,9 +730,9 @@
 
         Shrome {
             bindings = <
-&td_escape    &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(5)                     &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(10)  &trans           &msc MOVE_Y(-10)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-5)                    &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+&td_escape    &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(10)                     &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(30)  &trans           &msc MOVE_Y(-30)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-10)                    &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
@@ -755,8 +755,8 @@
         Nav {
             display-name = "Nav";
             bindings = <
-&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
-&trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
+&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc MOVE_Y(150)                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
+&trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_Y(-150)           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
 &bt BT_CLR   &out OUT_USB  &msc SCRL_LEFT  &out OUT_BLE    &msc SCRL_RIGHT  &mkp MB5        &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp LC(LS(LEFT))    &kp LBRC        &kp LC(LS(RIGHT))    &kp PIPE   &kp TILDE
                                            &bt BT_PRV      &bt BT_NXT       &kp SPACE                                                                  &to 1      &trans              &trans
             >;
