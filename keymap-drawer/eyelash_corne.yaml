@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:volume-off$$
+  - {t: Ctl+0, s: Ctl+)}
   - '&msc MOVE_Y(-10)'
   - N
   - M
@@ -84,7 +84,7 @@ layers:
   - G
   - '&ak_v'
   - Q
-  - $$mdi:volume-off$$
+  - {t: Ctl+0, s: Ctl+)}
   - '&msc MOVE_Y(-5)'
   - B
   - H
@@ -133,7 +133,7 @@ layers:
   - '&as N3'
   - '&as N4'
   - {t: '-', h: /, s: _}
-  - BRIGHTNESS AUTO
+  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+*
   - {t: '-', s: _}
@@ -231,7 +231,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - '&td_bius'
-  - $$mdi:volume-off$$
+  - BRIGHTNESS AUTO
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
