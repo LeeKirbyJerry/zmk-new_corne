@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+// &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+// &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -21,8 +21,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <250>;
-    acceleration-exponent = <1>;
+     time-to-max-speed-ms = <100>;
+    acceleration-exponent = <0>;
     trigger-period-ms = <16>;
     delay-ms = <0>;                   // 0
 };
