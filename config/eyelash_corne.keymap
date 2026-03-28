@@ -711,7 +711,7 @@
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Shrome {
@@ -722,7 +722,7 @@
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
             label = "Shrome";
         };
 
@@ -755,11 +755,11 @@
             bindings = <
 &studio_unlock  &mt LC(LS(TAB)) LC(TAB)  &kp LC(W)            &kp F3                     &kp LC(R)  &mt LS(LC(T)) LC(T)                                &mmv MOVE_UP                     &kp F1  &kp F2        &kp F3         &kp F4         &kp F5          &kp F6
 &trans          &kp LC(A)                &mt LC(LS(S)) LC(S)  &mt LS(LA(DOWN)) LA(DOWN)  &kp LC(F)  &td_zoom                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7  &kp F8        &kp F9         &kp F10        &kp F11         &kp F12
-&kp LC(LS(Z))   &kp LC(Z)                &kp LC(X)            &kp LC(C)                  &kp LC(V)  &td_bius             &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &kp LEFT_GUI  &kp LG(SPACE)  &kp LG(LS(S))  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&kp LC(LS(Z))   &kp LC(Z)                &kp LC(X)            &kp LC(C)                  &kp LC(V)  &td_bius             &kp LC(N0)                    &mmv MOVE_DOWN                   &trans  &kp LEFT_GUI  &kp LG(SPACE)  &kp LG(LS(S))  &kp SCROLLLOCK  &kp PAUSE_BREAK
                                                               &trans                     &mo 8      &trans                                                                              &trans  &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         OneHanded {
