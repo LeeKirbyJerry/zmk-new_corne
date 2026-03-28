@@ -159,14 +159,14 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            bindings = <&msc SCRL_UP>, <&kp LC(EQUAL)>;
+            bindings = <&msc MOVE_Y(10)>, <&kp LC(EQUAL)>;
         };
 
         mm_scroll_down: mod_morph_scroll_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            bindings = <&msc SCRL_DOWN>, <&kp LC(MINUS)>;
+            bindings = <&msc MOVE_Y(-10)>, <&kp LC(MINUS)>;
         };
     };
 
@@ -186,7 +186,7 @@
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        bindings = <&msc >, <&msc SCRL_DOWN>;
 
         tap-ms = <100>;
     };
