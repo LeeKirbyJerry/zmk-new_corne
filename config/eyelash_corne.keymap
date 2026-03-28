@@ -729,10 +729,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8     &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE     &kp LBKT        &kp RBKT       &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&mm_backspace  &as N6        &as N1  &as N5     &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)    &kp LS(RPAR)   &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)   &kp DOT       &as N2  &as N3     &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS       &kp LS(LT)     &kp LS(GT)     &mm_slash     &kp U
-                                     &kp SPACE  &kp SPACE  &kp SPACE                                                                                  &kp PIPE      &kp UNDERSCORE  &kp AMPERSAND
+&kp GRAVE      &kp LS(EXCL)  &as N7  &as N8  &as N9     &mt STAR PLUS                                             &mmv MOVE_UP                     &kp GRAVE     &kp LBKT        &kp RBKT       &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&mm_backspace  &as N6        &as N1  &as N5  &as N0     &kp EQUAL                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)    &kp LS(RPAR)   &kp LS(COLON)  &kp SEMI      &kp PG_UP
+&kp LC(BSPC)   &kp DOT       &as N2  &as N3  &as N4     &mt SLASH MINUS  &kp C_BRIGHTNESS_AUTO                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS       &kp LS(LT)     &kp LS(GT)     &mm_slash     &kp U
+                                     &mo 8   &kp SPACE  &kp SPACE                                                                                  &kp PIPE      &kp UNDERSCORE  &kp AMPERSAND
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -756,7 +756,7 @@
 &studio_unlock  &mt LC(LS(TAB)) LC(TAB)  &kp LC(W)            &kp F3                     &kp LC(R)  &mt LS(LC(T)) LC(T)                                &mmv MOVE_UP                     &kp F1  &kp F2        &kp F3         &kp F4         &kp F5          &kp F6
 &trans          &kp LC(A)                &mt LC(LS(S)) LC(S)  &mt LS(LA(DOWN)) LA(DOWN)  &kp LC(F)  &td_zoom                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7  &kp F8        &kp F9         &kp F10        &kp F11         &kp F12
 &kp LC(LS(Z))   &kp LC(Z)                &kp LC(X)            &kp LC(C)                  &kp LC(V)  &td_bius             &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &kp LEFT_GUI  &kp LG(SPACE)  &kp LG(LS(S))  &kp SCROLLLOCK  &kp PAUSE_BREAK
-                                                              &trans                     &trans     &trans                                                                              &trans  &trans        &trans
+                                                              &trans                     &mo 8      &trans                                                                              &trans  &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -765,10 +765,10 @@
         OneHanded {
             display-name = "One-Handed";
             bindings = <
-&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                           &trans          &kp APOSTROPHE  &kp I      &kp N      &kp O    &kp R   &kp ESC
-&kp BSPC  &kp S    &kp A    &kp T      &kp E      &kp D                     &trans  &trans  &trans  &kp D           &kp E      &kp T      &kp A    &kp S   &kp BSPC
-&trans    &kp DOT  &kp DOT  &kp COMMA  &kp G      &kp B           &trans            &trans          &kp N           &kp G      &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
-                            &trans     &kp SPACE  &kp LEFT_SHIFT                                    &kp LEFT_SHIFT  &kp SPACE  &trans
+&kp ESC   &kp R    &kp O    &kp N      &kp I      &kp SQT                                   &mmv MOVE_UP                     &kp APOSTROPHE  &kp I      &kp N      &kp O    &kp R   &kp ESC
+&kp BSPC  &kp S    &kp A    &kp T      &kp E      &kp D                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp D           &kp E      &kp T      &kp A    &kp S   &kp BSPC
+&trans    &kp DOT  &kp DOT  &kp COMMA  &kp G      &kp B           &trans                    &mmv MOVE_DOWN                   &kp N           &kp G      &kp COMMA  &kp DOT  &trans  &kp LC(BSPC)
+                            &lt 7 TAB  &kp SPACE  &kp LEFT_SHIFT                                                             &kp LEFT_SHIFT  &kp SPACE  &lt 7 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
