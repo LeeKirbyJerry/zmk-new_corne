@@ -179,16 +179,16 @@
     scroll_encoder_mm: scroll_encoder_mm {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&mm_scroll_up>, <&mm_scroll_down>;
+        bindings = <&mm_scroll_down>, <&mm_scroll_up>;
 
-          tap-ms = <100>;
+        tap-ms = <100>;
     };
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-          tap-ms = <100>;
+        tap-ms = <100>;
     };
 
     combos {
@@ -732,7 +732,7 @@
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &ToShrome  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder_mm>;
         };
 
         Shrome {
@@ -743,7 +743,7 @@
                                 &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &ToChinese  &kp SPACE  &lt 3 TAB
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder_mm>;
             label = "Shrome";
         };
 
