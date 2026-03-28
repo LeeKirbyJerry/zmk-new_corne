@@ -231,7 +231,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - '&td_bius'
-  - $$mdi:volume-off$$
+  - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
