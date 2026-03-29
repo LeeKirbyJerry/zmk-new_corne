@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // 120
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 120
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -174,7 +174,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&mm_scroll_down>, <&mm_scroll_up>;
 
-        tap-ms = <20>;
+        tap-ms = <40>;
         };
     };
 
