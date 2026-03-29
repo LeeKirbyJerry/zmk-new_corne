@@ -175,7 +175,7 @@
         bindings = <&mm_scroll_down>, <&mm_scroll_up>;
 
         tap-ms = <100>;
-    };
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -190,7 +190,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <100>;
+        tap-ms = <50>;
     };
 
     combos {
@@ -626,6 +626,60 @@
             bindings = <&kp LG(ENTER)>;
             key-positions = <1 14 11 26>;
             layers = <0 1 2 3 4 7 5>;
+        };
+
+        LCtrlSticky {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <4 17>;
+            layers = <5 7>;
+        };
+
+        LEnterSticky {
+            bindings = <&sk ENTER>;
+            key-positions = <15 16 17>;
+            layers = <5 7>;
+        };
+
+        RCtrlSticky {
+            bindings = <&sk RCTRL>;
+            key-positions = <8 23>;
+            layers = <5 7>;
+        };
+
+        LShiftSticky {
+            bindings = <&sk LSHIFT>;
+            key-positions = <3 16>;
+            layers = <5 7>;
+        };
+
+        RShiftSticky {
+            bindings = <&sk RSHIFT>;
+            key-positions = <9 24>;
+            layers = <5 7>;
+        };
+
+        LAltSticky {
+            bindings = <&sk LALT>;
+            key-positions = <2 15>;
+            layers = <5 7>;
+        };
+
+        RAltSticky {
+            bindings = <&sk RALT>;
+            key-positions = <10 25>;
+            layers = <5 7>;
+        };
+
+        LGuiSticky {
+            bindings = <&sk LGUI>;
+            key-positions = <1 14>;
+            layers = <5 7>;
+        };
+
+        RGuiSticky {
+            bindings = <&sk RGUI>;
+            key-positions = <11 26>;
+            layers = <5 7>;
         };
     };
 
