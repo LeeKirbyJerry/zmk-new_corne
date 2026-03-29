@@ -174,7 +174,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&mm_scroll_down>, <&mm_scroll_up>;
 
-        tap-ms = <40>;
+        tap-ms = <100>;
         };
     };
 
