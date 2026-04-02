@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
-  - '&ToShrome'
+  - {t: '&ToShrome', s: '&ToShrome_ctrl'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Shrome:
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - '&td0'
-  - '&ToChinese'
+  - {t: '&ToChinese', s: '&ToChinese_ctrl'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   Symbols:
