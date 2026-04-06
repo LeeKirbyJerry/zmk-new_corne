@@ -126,7 +126,7 @@ layers:
   - Sft+)
   - 'Sft+:'
   - {t: ;, s: ':'}
-  - PG UP
+  - '&'
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: ., s: '>'}
   - '&as N2'
@@ -140,13 +140,13 @@ layers:
   - Sft+<
   - Sft+>
   - {t: /, s: \}
-  - U
+  - '|'
   - Windows
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:keyboard-space$$
   - '|'
+  - $$mdi:keyboard-space$$
   - _
-  - '&'
   Nav:
   - $$mdi:progress-download$$
   - $$mdi:mouse-scroll-wheel$$
