@@ -11,9 +11,10 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
- &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {  
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+
+&msc {
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <1000>;       // 300
     delay-ms = <0>;                   // 0
@@ -170,11 +171,11 @@
         };
 
         scroll_encoder_mm: scroll_encoder_mm {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&mm_scroll_down>, <&mm_scroll_up>;
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mm_scroll_down>, <&mm_scroll_up>;
 
-        tap-ms = <100>;
+            tap-ms = <100>;
         };
     };
 
@@ -184,7 +185,6 @@
         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
     };
 
-    
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -812,9 +812,9 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(10)              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp DEL
-&kp BSPC           &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp LC(N0)              &msc MOVE_Y(-10)             &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
+&td_escape         &kp Q  &kp W  &kp E      &kp R        &kp T                          &msc MOVE_Y(10)              &kp Y          &kp U      &kp I      &kp O    &kp P     &kp DEL
+&kp BSPC           &kp A  &kp S  &kp D      &kp F        &kp G                &kp LEFT  &kp ENTER         &kp RIGHT  &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LC(BACKSPACE)  &kp Z  &kp X  &kp C      &kp V        &kp B  &kp LC(N0)              &msc MOVE_Y(-10)             &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &as TAB
                                  &lt 4 TAB  &lt 2 SPACE  &td0                                                        &mm_to_shrome  &kp SPACE  &lt 3 TAB
             >;
 
@@ -823,10 +823,10 @@
 
         Shrome {
             bindings = <
-&td_escape    &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(10)                     &kp Z       &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(30)  &trans           &msc MOVE_Y(-30)  &kp P       &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-10)                    &kp B       &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
-                                &lt 4 TAB  &lt 2 SPACE  &td0                                                                     &mm_to_chinese  &kp SPACE  &lt 3 TAB
+&td_escape    &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(10)                     &kp Z           &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(30)  &trans            &msc MOVE_Y(-30)  &kp P           &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-10)                    &kp B           &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+                                &lt 4 TAB  &lt 2 SPACE  &td0                                                                      &mm_to_chinese  &kp SPACE  &lt 3 TAB
             >;
 
             sensor-bindings = <&scroll_encoder_mm>;
@@ -836,10 +836,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE     &kp LS(EXCL)  &as N7  &as N8  &as N9     &mt STAR PLUS                                  &mmv MOVE_UP                     &kp GRAVE     &kp LBKT        &kp RBKT       &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
-&kp BSPC      &as N6        &as N1  &as N5  &as N0     &kp EQUAL                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)    &kp LS(RPAR)   &kp LS(COLON)  &kp SEMI      &kp PG_UP
-&kp LC(BSPC)  &kp DOT       &as N2  &as N3  &as N4     &mt SLASH MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS       &kp LS(LT)     &kp LS(GT)     &mm_slash     &kp U
-                                    &mo 8   &kp SPACE  &kp SPACE                                                                       &kp PIPE      &kp UNDERSCORE  &kp AMPERSAND
+&kp GRAVE     &kp LS(EXCL)  &as N7  &as N8  &as N9     &mt STAR PLUS                                  &mmv MOVE_UP                     &kp GRAVE     &kp LBKT      &kp RBKT        &kp LS(LBRC)   &kp LS(RBRC)  &kp RBKT
+&kp BSPC      &as N6        &as N1  &as N5  &as N0     &kp EQUAL                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp LS(LPAR)  &kp LS(RPAR)    &kp LS(COLON)  &kp SEMI      &kp AMPERSAND
+&kp LC(BSPC)  &kp DOT       &as N2  &as N3  &as N4     &mt SLASH MINUS  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LS(STAR)  &kp MINUS     &kp LS(LT)      &kp LS(GT)     &mm_slash     &kp PIPE
+                                    &mo 8   &kp SPACE  &kp SPACE                                                                       &kp PIPE      &kp SPACE     &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -848,10 +848,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc MOVE_Y(150)                              &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
-&trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_Y(-150)           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
-&bt BT_CLR   &out OUT_USB  &msc SCRL_LEFT  &out OUT_BLE    &msc SCRL_RIGHT  &mkp MB5        &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp LC(LS(LEFT))    &kp LBRC        &kp LC(LS(RIGHT))    &kp PIPE   &kp TILDE
-                                           &bt BT_PRV      &bt BT_NXT       &kp SPACE                                                                  &to 1      &trans              &trans
+&bootloader  &mkp MCLK     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc MOVE_Y(150)                             &mmv MOVE_UP                     &kp HOME   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp RPAR   &kp BSPC
+&trans       &bt BT_CLR    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_Y(-150)            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mkp LCLK  &kp GRAVE
+&bt BT_CLR   &out OUT_USB  &msc SCRL_LEFT  &out OUT_BLE    &msc SCRL_RIGHT  &mkp MB5           &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp LC(LS(LEFT))    &kp LBRC        &kp LC(LS(RIGHT))    &kp PIPE   &kp TILDE
+                                           &bt BT_PRV      &bt BT_NXT       &kp SPACE                                                                     &to 1      &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
