@@ -734,7 +734,8 @@
         ToChinese: ToChinese {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
+            bindings = <&macro_tap>, <&kp LC(LS(SPACE)) &to 0>;
+            #bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
 
             label = "TOCHINESE";
         };
@@ -742,7 +743,8 @@
         ToChinese_ctrl: ToChinese_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(LS(SPACE)) &to 0>;
+            bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
+            #bindings = <&macro_tap>, <&kp LC(LS(SPACE)) &to 0>;
 
             label = "TOCHINESE_CTRL";
         };
@@ -757,7 +759,8 @@
         ToShrome: ToShrome {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
+            bindings = <&macro_tap>, <&kp LC(SPACE) &to 1>;
+            #bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
 
             label = "TOSHROME";
         };
@@ -765,7 +768,8 @@
         ToShrome_ctrl: ToShrome_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LC(SPACE) &to 1>;
+            bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
+            #bindings = <&macro_tap>, <&kp LC(SPACE) &to 1>;
 
             label = "TOSHROME_CTRL";
         };
