@@ -682,3 +682,5 @@ combos:
 - p: [11, 26]
   k: {t: RGUI, h: '$$mdi:gesture-tap-hold$$'}
   l: [One-Handed, OHNumber]
+- p: [30, 31]
+  k: Alt+$$mdi:keyboard-tab$$
