@@ -80,7 +80,7 @@ layers:
   - {t: ',', s: '?'}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '''', s: _}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - '&mt_x LEFT_ALT X'
   - {t: G, s: '$$mdi:keyboard-tab$$'}
   - '&ak_v'
   - Q
