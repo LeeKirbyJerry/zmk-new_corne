@@ -81,7 +81,7 @@ layers:
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '''', s: _}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - G
+  - {t: G, s: '$$mdi:keyboard-tab$$'}
   - '&ak_v'
   - Q
   - {t: Ctl+0, s: Ctl+)}
