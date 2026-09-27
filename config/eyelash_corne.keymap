@@ -35,14 +35,7 @@
 
 / {
     behaviors {
-        mt_x: mt_x {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "hold-preferred";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <31>;
-            bindings = <&kp>, <&kp>;
-        };
+
 
         ak_c: ak_c {
             compatible = "zmk,behavior-adaptive-key";
@@ -155,6 +148,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
             bindings = <&kp G>, <&kp TAB>;
         };
 
