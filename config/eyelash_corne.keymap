@@ -836,10 +836,10 @@
 
         Shrome {
             bindings = <
-&td_escape    &kp W      &kp L  &kp Y      &kp M        &kp K                                 &msc MOVE_Y(10)                     &kp Z           &kp F      &kp O      &kp U       &kp J      &kp SEMI
-&kp BSPC      &ak_c      &kp R  &kp S      &kp T        &kp D                &msc MOVE_Y(30)  &trans            &msc MOVE_Y(-30)  &kp P           &kp N      &kp A      &ak_e       &kp I      &mm_comma
-&kp LC(BSPC)  &mm_quote  &kp X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-10)                    &kp B           &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
-                                &lt 4 TAB  &lt 2 SPACE  &td0                                                                      &mm_to_chinese  &kp SPACE  &lt 3 TAB
+&td_escape    &kp W      &kp L           &kp Y      &kp M        &kp K                                 &msc MOVE_Y(10)                     &kp Z           &kp F      &kp O      &kp U       &kp J      &kp SEMI
+&kp BSPC      &ak_c      &kp R           &kp S      &kp T        &kp D                &msc MOVE_Y(30)  &trans            &msc MOVE_Y(-30)  &kp P           &kp N      &kp A      &ak_e       &kp I      &mm_comma
+&kp LC(BSPC)  &mm_quote  &mt LEFT_ALT X  &kp G      &ak_v        &kp Q  &kp LC(N0)                     &msc MOVE_Y(-10)                    &kp B           &kp H      &mm_dot    &mm_hyphen  &mm_slash  &as TAB
+                                         &lt 4 TAB  &lt 2 SPACE  &td0                                                                      &mm_to_chinese  &kp SPACE  &lt 3 TAB
             >;
 
             sensor-bindings = <&scroll_encoder_mm>;
