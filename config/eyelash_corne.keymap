@@ -36,9 +36,10 @@
 / {
     behaviors {
         mt_x: mt_x {
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <31>;
             compatible = "zmk,behavior-hold-tap";
+            flavor = "hold-preferred";
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <31>;
             bindings = <&kp>, <&kp>;
         };
 
