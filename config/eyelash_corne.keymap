@@ -681,6 +681,11 @@
             key-positions = <11 26>;
             layers = <5 7>;
         };
+
+        AltTab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -735,6 +740,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(LS(SPACE)) &to 0>;
+
             #bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
 
             label = "TOCHINESE";
@@ -744,6 +750,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LA(LS(NUMBER_0)) &to 0>;
+
             #bindings = <&macro_tap>, <&kp LC(LS(SPACE)) &to 0>;
 
             label = "TOCHINESE_CTRL";
@@ -760,6 +767,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(SPACE) &to 1>;
+
             #bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
 
             label = "TOSHROME";
@@ -769,6 +777,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LS(LA(NUMBER_1)) &to 1>;
+
             #bindings = <&macro_tap>, <&kp LC(SPACE) &to 1>;
 
             label = "TOSHROME_CTRL";
