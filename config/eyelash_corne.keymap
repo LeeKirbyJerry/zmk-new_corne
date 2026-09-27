@@ -27,7 +27,7 @@
     delay-ms = <0>;                   // 0
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt { flavor = "balanced"; };
 
 &lt { flavor = "hold-preferred"; };
 
