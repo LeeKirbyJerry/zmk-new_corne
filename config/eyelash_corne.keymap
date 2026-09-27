@@ -39,7 +39,7 @@
             flavor = "hold-preferred";
             hold-trigger-key-positions = <31>;
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp LEFT_ALT>, <&kp X>;
+            bindings = <&kp>, <&kp>;
         };
 
         ak_c: ak_c {
