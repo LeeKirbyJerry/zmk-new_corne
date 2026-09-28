@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
-  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols, s: '$$mdi:keyboard-tab$$'}
   - '&td0'
   - {t: '&ToShrome_ctrl', s: '&ToShrome'}
   - $$mdi:keyboard-space$$
