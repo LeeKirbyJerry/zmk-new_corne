@@ -16,7 +16,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - A
-  - S
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - D
   - F
   - G
@@ -65,7 +65,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&ak_c'
-  - R
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - S
   - T
   - D
@@ -93,7 +93,7 @@ layers:
   - {t: /, s: \}
   - '&as TAB'
   - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
-  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols, s: '$$mdi:keyboard-tab$$'}
   - '&td0'
   - {t: '&ToChinese_ctrl', s: '&ToChinese'}
   - $$mdi:keyboard-space$$
