@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - '&as TAB'
-  - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
+  - {t: '$$mdi:keyboard-tab$$', h: Shortcuts, s: '$$mdi:keyboard-tab-reverse$$'}
   - {t: '$$mdi:keyboard-space$$', h: Symbols, s: '$$mdi:keyboard-tab$$'}
   - '&td0'
   - {t: '&ToShrome_ctrl', s: '&ToShrome'}
@@ -92,7 +92,7 @@ layers:
   - {t: '-', s: '"'}
   - {t: /, s: \}
   - '&as TAB'
-  - {t: '$$mdi:keyboard-tab$$', h: Shortcuts}
+  - {t: '$$mdi:keyboard-tab$$', h: Shortcuts, s: '$$mdi:keyboard-tab-reverse$$'}
   - {t: '$$mdi:keyboard-space$$', h: Symbols, s: '$$mdi:keyboard-tab$$'}
   - '&td0'
   - {t: '&ToChinese_ctrl', s: '&ToChinese'}
