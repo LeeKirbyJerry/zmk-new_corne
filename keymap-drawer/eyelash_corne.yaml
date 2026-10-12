@@ -80,7 +80,7 @@ layers:
   - {t: ',', s: '?'}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '''', s: _}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - X
   - {t: G, s: '$$mdi:keyboard-tab$$'}
   - '&ak_v'
   - Q
@@ -682,5 +682,3 @@ combos:
 - p: [11, 26]
   k: {t: RGUI, h: '$$mdi:gesture-tap-hold$$'}
   l: [One-Handed, OHNumber]
-- p: [30, 31]
-  k: Alt+$$mdi:keyboard-tab$$
