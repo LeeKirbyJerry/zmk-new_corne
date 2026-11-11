@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - {t: Ctl+0, s: Ctl+)}
-  - '&msc MOVE_Y(-10)'
+  - '&msc (MOVE_Y(-10))'
   - N
   - M
   - {t: ',', s: <}
@@ -71,7 +71,7 @@ layers:
   - D
   - '&msc MOVE_Y(30)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&msc MOVE_Y(-30)'
+  - '&msc (MOVE_Y(-30))'
   - P
   - N
   - A
@@ -85,7 +85,7 @@ layers:
   - '&ak_v'
   - Q
   - {t: Ctl+0, s: Ctl+)}
-  - '&msc MOVE_Y(-10)'
+  - '&msc (MOVE_Y(-10))'
   - B
   - H
   - {t: ., s: _}
@@ -166,7 +166,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&msc MOVE_Y(-150)'
+  - '&msc (MOVE_Y(-150))'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -198,11 +198,11 @@ layers:
   - {type: held}
   Shortcuts:
   - '&studio_unlock'
-  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: 'Ctl+Sft+$$mdi:keyboard-tab$$'}
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: (LC(LS(TAB)))}
   - Ctl+W
-  - F3
+  - {t: 'Alt+$$mdi:arrow-up-bold$$', h: (LG(E))}
   - Ctl+R
-  - {t: Ctl+T, h: Sft+Ctl+T}
+  - {t: Ctl+T, h: (LS(LC(T)))}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F1
   - F2
@@ -212,8 +212,8 @@ layers:
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
-  - {t: Ctl+S, h: Ctl+Sft+S}
-  - {t: 'Alt+$$mdi:arrow-down-bold$$', h: 'Sft+Alt+$$mdi:arrow-down-bold$$'}
+  - {t: Ctl+S, h: (LC(LS(S)))}
+  - {t: 'Alt+$$mdi:arrow-down-bold$$', h: (LS(LA(DOWN)))}
   - Ctl+F
   - '&td_zoom'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
