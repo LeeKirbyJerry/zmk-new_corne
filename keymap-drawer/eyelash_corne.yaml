@@ -240,7 +240,7 @@ layers:
   - SCROLLLOCK
   - PAUSE BREAK
   - {type: held}
-  - Windows
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
